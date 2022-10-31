@@ -1,0 +1,74 @@
+$res_mobile : "(min-width: 360px) and (max-width:739px)";
+$res_tablet : "(min-width: 740px) and (max-width: 1023px)";
+$res_tablet-mobile : "(max-width: 1023px)";
+$res_pc: "(min-width:1024px)";
+
+@mixin responsive_mobile() {
+  @media #{$res_mobile} {
+    @content;
+  }
+}
+
+@mixin responsive_tablet() {
+  @media #{$res_tablet} {
+    @content;
+  }
+}
+
+@mixin responsive_tablet-mobile() {
+  @media #{$res_tablet-mobile} {
+    @content;
+  }
+}
+
+@mixin responsive_pc() {
+  @media #{$res_pc} {
+    @content;
+  }
+}
+
+
+@font-face {
+  font-family: UTM-Avo;
+  src: url("../font/UTM-Avo.ttf");
+}
+
+@font-face {
+  font-family: UTM_AvoBold;
+  src: url('../font/AvoBold.ttf');
+}
+
+@font-face {
+  font-family: UTM_AvoBold_Italic;
+  src: url('../font/AvoBold_Italic.ttf');
+}
+
+@font-face {
+  font-family: UTM_Avo-Italic;
+  src: url('../font/AvoItalic.ttf');
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('../font/Inter.ttf');
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url('../font/Inter-Regular.otf');
+}
+
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url('../font/Inter-SemiBold.otf');
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../font/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('../font/Roboto-Bold.ttf');
+}
