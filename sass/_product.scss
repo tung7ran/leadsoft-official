@@ -2,6 +2,7 @@
 
 .product{
     margin-top: 11rem;
+    margin-bottom: 10.4rem;
     &-heading{
         font-weight: 700;
         color: $main;
@@ -18,5 +19,101 @@
         text-align: center;
         line-height: 2.6rem;
         font-family: Roboto-regular;
+    }
+}
+.product-top{
+    &-list{
+        &__item{
+            height: 35rem;
+            position: relative;
+            left: 1rem;
+            &--image{
+                position: absolute;
+                width: 58rem;
+                height: 100%;
+                img{
+                    border-radius: 2rem;
+                }
+            }
+            &--title{
+                font-size: 1.8rem;
+                position: relative;
+                margin-top: 4rem;
+                margin-left: 4rem;
+                color: $white;
+            }
+            &--sub{
+                font-size: 1.6rem;
+                position: relative;
+                margin: 1.5rem 39% 2rem 4rem;
+                height: 8rem;
+                color: $white;
+            }
+            &--button{
+                position: relative;
+                font-size: 1.6rem;
+                color: #fff;
+                background-color: #F0A21A;
+                padding: 0.8rem 3rem;
+                border-radius: 0.5rem;
+                margin-left: 4rem;
+                border: none;
+            }
+        }
+    }
+}
+.product-bottom{
+    margin-top: 10.4rem;
+    &-list{
+        &__item{
+            height: 35rem;
+            position: relative;
+            left: 1rem;
+            &--image{
+                position: absolute;
+                width: 58rem;
+                height: 100%;
+                img{
+                    border-radius: 2rem;
+                }
+            }
+            &--title{
+                font-size: 1.8rem;
+                position: relative;
+                margin-top: 4rem;
+                margin-left: 4rem;
+                color: $white;
+            }
+            &--sub{
+                font-size: 1.6rem;
+                position: relative;
+                margin: 1.5rem 39% 2rem 4rem;
+                height: 8rem;
+                color: $white;
+            }
+            &--button{
+                position: relative;
+                font-size: 1.6rem;
+                color: #fff;
+                background-color: #F0A21A;
+                padding: 0.8rem 3rem;
+                border-radius: 0.5rem;
+                margin-left: 4rem;
+                border: none;
+            }
+        }
+    }
+}
+.product-numerical{
+    margin-top: 6.8rem;
+    &-list{
+        display: flex;
+        justify-content: center;
+        &__item{
+            padding: 0 1rem;
+            font-size: 1.8rem;
+            color: $color-number;
+            font-family: Roboto-regular;
+        }
     }
 }
