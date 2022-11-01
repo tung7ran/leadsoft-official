@@ -1,0 +1,20 @@
+@import 'variables';
+
+.product{
+    &-heading{
+        font-weight: 700;
+        color: $orage;
+        line-height: 5.2rem;
+        font-size: 3.6rem;
+        text-align: center;
+        font-family: Roboto-regular;
+    }
+    &-sub{
+        font-weight: 700;
+        color: $black;
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 2.6rem;
+        font-family: Roboto-regular;
+    }
+}
