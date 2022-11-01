@@ -1,0 +1,22 @@
+@import 'variables';
+
+.product{
+    margin-top: 11rem;
+    &-heading{
+        font-weight: 700;
+        color: $main;
+        line-height: 5.2rem;
+        font-size: 3.6rem;
+        text-align: center;
+        font-family: Roboto-regular;
+    }
+    &-sub{
+        margin-top: 6.1rem;
+        font-weight: 700;
+        color: $black;
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 2.6rem;
+        font-family: Roboto-regular;
+    }
+}

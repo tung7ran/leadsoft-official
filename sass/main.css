@@ -94,8 +94,6 @@ video {
   font: inherit;
   vertical-align: baseline;
   outline: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -159,6 +157,169 @@ img {
   font-weight: bold;
 }
 
+.wrap-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.footer {
+  padding-top: 3.6rem;
+  position: relative;
+  width: 100%;
+  background-color: #FF9330;
+  min-height: 28.5rem;
+}
+.footer-logo-image {
+  width: 22.5rem;
+  height: 2.9rem;
+  filter: drop-shadow(0px 3px 5px rgba(255, 255, 255, 0.47));
+}
+.footer-logo-describe p {
+  margin-top: 2.4rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-family: Roboto-regular;
+}
+.footer-address-title {
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 3.9rem;
+  font-weight: 700;
+  font-family: Roboto-regular;
+}
+.footer-address-details {
+  margin-top: 1.4rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-family: Roboto-regular;
+}
+.footer-address-phone {
+  margin-top: 1.4rem;
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  font-weight: 700;
+  font-family: Roboto-regular;
+}
+.footer-address-number {
+  margin-top: 1.4rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-family: Roboto-regular;
+}
+.footer-social-title {
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 3.9rem;
+  font-weight: 700;
+  font-family: Roboto-regular;
+}
+.footer-social-icon__list {
+  display: flex;
+}
+.footer-social-icon__list--item {
+  margin-top: 1.4rem;
+  padding-left: 1.8rem;
+}
+.footer-social-icon .none-padding {
+  padding-left: 0rem;
+}
+.footer-copyright {
+  margin-top: 3.5rem;
+  border-top: 1px solid #CECECE;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-copyright p {
+  margin-top: 2.1rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-family: Roboto-regular;
+  margin-bottom: 1.6rem;
+}
+
+.footer .wave {
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background: url(../images/wave.jpg);
+  background-size: 100rem 10rem;
+}
+.footer #wave1 {
+  z-index: 1000;
+  opacity: 0.9;
+  bottom: 0;
+  -webkit-animation: animateWave 4s linear infinite;
+          animation: animateWave 4s linear infinite;
+}
+.footer #wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 1rem;
+  -webkit-animation: animateWave_02 4s linear infinite;
+          animation: animateWave_02 4s linear infinite;
+}
+.footer #wave3 {
+  z-index: 999;
+  opacity: 0.2;
+  bottom: 1.5rem;
+  -webkit-animation: animateWave_02 3s linear infinite;
+          animation: animateWave_02 3s linear infinite;
+}
+.footer #wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 2rem;
+  -webkit-animation: animateWave_02 3s linear infinite;
+          animation: animateWave_02 3s linear infinite;
+}
+
+@-webkit-keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+@-webkit-keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
 .header {
   border-bottom: 1px solid #FF9330;
 }
@@ -170,4 +331,24 @@ img {
 @font-face {
   font-family: Roboto-Regular;
   src: url("../font/Roboto-Regular.ttf");
+}
+.product {
+  margin-top: 11rem;
+}
+.product-heading {
+  font-weight: 700;
+  color: #FF9330;
+  line-height: 5.2rem;
+  font-size: 3.6rem;
+  text-align: center;
+  font-family: Roboto-regular;
+}
+.product-sub {
+  margin-top: 6.1rem;
+  font-weight: 700;
+  color: #000;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2.6rem;
+  font-family: Roboto-regular;
 }/*# sourceMappingURL=main.css.map */
