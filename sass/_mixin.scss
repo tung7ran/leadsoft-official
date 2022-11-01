@@ -28,11 +28,10 @@ $res_pc: "(min-width:1024px)";
 }
 
 @font-face {
+  font-family: Roboto-Bold;
+  src: url("../font/Roboto-Bold.ttf");
+}
+@font-face {
   font-family: Roboto-Regular;
   src: url('../font/Roboto-Regular.ttf');
-}
-
-@font-face {
-  font-family: Roboto-Bold;
-  src: url('../font/Roboto-Bold.ttf');
 }
