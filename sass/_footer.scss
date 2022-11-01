@@ -1,6 +1,6 @@
 @import 'variables';
 
-.wrap-body{
+.wrap-footer{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -12,7 +12,7 @@
     padding-top: 3.6rem;
     position: relative;
     width: 100%;
-    background-color: $orage;
+    background-color: $main;
     min-height: 28.5rem;
     &-logo{
         &-image{

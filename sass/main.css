@@ -94,8 +94,6 @@ video {
   font: inherit;
   vertical-align: baseline;
   outline: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -159,12 +157,7 @@ img {
   font-weight: bold;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.wrap-body {
+.wrap-footer {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -326,6 +319,7 @@ img {
   100% {
     background-position-x: 1000px;
   }
+}
 .header {
   border-bottom: 1px solid #FF9330;
 }
@@ -337,4 +331,24 @@ img {
 @font-face {
   font-family: Roboto-Regular;
   src: url("../font/Roboto-Regular.ttf");
+}
+.product {
+  margin-top: 11rem;
+}
+.product-heading {
+  font-weight: 700;
+  color: #FF9330;
+  line-height: 5.2rem;
+  font-size: 3.6rem;
+  text-align: center;
+  font-family: Roboto-regular;
+}
+.product-sub {
+  margin-top: 6.1rem;
+  font-weight: 700;
+  color: #000;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2.6rem;
+  font-family: Roboto-regular;
 }/*# sourceMappingURL=main.css.map */
