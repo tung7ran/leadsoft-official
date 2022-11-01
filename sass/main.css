@@ -94,12 +94,14 @@ video {
   font: inherit;
   vertical-align: baseline;
   outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
-  font-family: UTM-Avo;
+  font-family: Roboto-Bold;
   line-height: 2em;
   box-sizing: border-box;
 }
@@ -153,7 +155,7 @@ img {
 }
 
 .header-active {
-  color: #0FD186;
+  color: #FF9330;
   font-weight: bold;
 }
 
@@ -324,12 +326,15 @@ img {
   100% {
     background-position-x: 1000px;
   }
+.header {
+  border-bottom: 1px solid #FF9330;
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("../font/Roboto-Bold.ttf");
 }
 @font-face {
   font-family: Roboto-Regular;
   src: url("../font/Roboto-Regular.ttf");
-}
-@font-face {
-  font-family: Roboto-Bold;
-  src: url("../font/Roboto-Bold.ttf");
 }/*# sourceMappingURL=main.css.map */
