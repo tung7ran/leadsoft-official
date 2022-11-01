@@ -327,11 +327,11 @@ img {
   font-family: Roboto-Regular;
   src: url("../font/Roboto-Regular.ttf");
 }
-.product {
+.product-heading {
   margin-top: 11rem;
   margin-bottom: 10.4rem;
 }
-.product-heading {
+.product-heading-title {
   font-weight: 700;
   color: #FF9330;
   line-height: 5.2rem;
@@ -339,7 +339,7 @@ img {
   text-align: center;
   font-family: Roboto-regular;
 }
-.product-sub {
+.product-heading-sub {
   margin-top: 6.1rem;
   font-weight: 700;
   color: #000;
@@ -442,27 +442,27 @@ img {
   font-family: Roboto-regular;
 }
 
-.trademark {
+.base-partner {
   margin-top: 11.4rem;
 }
-.trademark-heading {
+.base-partner-heading {
   text-align: center;
   margin-bottom: 3.4rem;
 }
-.trademark-heading__text {
+.base-partner-heading__text {
   color: #FF9330;
   font-weight: 700;
   font-size: 4.2rem;
   line-height: 5rem;
   font-family: Roboto-regular;
 }
-.trademark-list {
+.base-partner-list {
   position: relative;
 }
-.trademark-list__item .margin-image-golfzon {
+.base-partner-list__item .margin-image-golfzon {
   margin-top: 3rem;
 }
-.trademark-list__item .margin-image-unicidex {
+.base-partner-list__item .margin-image-unicidex {
   margin-top: 6.8em;
 }
 

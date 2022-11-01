@@ -24,7 +24,7 @@ $(document).ready(function(){
         prevArrow: false,
     });
 
-    $('.trademark-list').slick({
+    $('.base-partner-list').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
