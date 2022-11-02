@@ -4,7 +4,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    min-height: 100vh;
+    min-height: 60vh;
     background-color: #fff;
 }
 
@@ -114,25 +114,25 @@
         background-size: 100rem 10rem;
     }
     #wave1{
-        z-index: 1000;
+        z-index: 10;
         opacity: 0.9;
         bottom: 0;
         animation: animateWave 4s linear infinite;
     }
     #wave2{
-        z-index: 999;
+        z-index: 9;
         opacity: 0.5;
         bottom: 1rem;
         animation: animateWave_02 4s linear infinite;
     }
     #wave3{
-        z-index: 999;
+        z-index: 9;
         opacity: 0.2;
         bottom: 1.5rem;
         animation: animateWave_02 3s linear infinite;
     }
     #wave4{
-        z-index: 999;
+        z-index: 9;
         opacity: 0.7;
         bottom: 2rem;
         animation: animateWave_02 3s linear infinite;
