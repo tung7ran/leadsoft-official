@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ</title>
+    <title>Tuyển Dụng</title>
     <link rel="icon" type="image/png" sizes="" href="">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
@@ -17,6 +17,38 @@
 </head>
 <body>
     <div class="wrap-body">
+        <header class="header">
+            <div class="container">
+                <div class="row header-body">
+                    <div class="header-body-logo col-xl-4 col-lg-4 col-md-4">
+                        <a href="./index.html">
+                            <img src="./images/Leadsoft-banner2.png" alt="">
+                        </a>
+                    </div>
+                    <ul class="header-body-menu col-xl-8 col-lg-8 col-md-8">
+                        <li class="header-body-menu__item">
+                            <a href="./index.html" class="header-body-menu__item--link">Home</a>
+                        </li>
+                        <li class="header-body-menu__item">
+                            <a href="./service.html" class="header-body-menu__item--link">Service</a>
+                        </li>
+                        <li class="header-body-menu__item">
+                            <a href="./product.html" class="header-body-menu__item--link">Product</a>
+                        </li>
+                        <li class="header-body-menu__item">
+                            <a href="#" class="header-body-menu__item--link header-active">Career</a>
+                        </li>
+                        <li class="header-body-menu__item">
+                            <a href="./contact.html" class="header-body-menu__item--link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="base-banner">
+            <div class="base-banner-career">
+            </div>
+        </div>
         <div class="content-recruit">
             <div class="content-recruit-image__top">
                 <img src="./images/globe 1.png" alt="">
@@ -148,6 +180,46 @@
                 </div>
             </div>
         </div>
+        <section class="product-pagination">
+            <div class="product-pagination-list">
+                <button class="product-pagination-list__left">
+                    <i class="fa-solid fa-angles-left"></i>
+                </button>
+                <button class="product-pagination-list__left">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="product-pagination-list__item active">
+                    1
+                </button>
+                <button class="product-pagination-list__item">
+                    2
+                </button>
+                <button class="product-pagination-list__item">
+                    3
+                </button>
+                <button class="product-pagination-list__item">
+                    4
+                </button>
+                <button class="product-pagination-list__item">
+                    <span>. . .</span> 
+                </button>
+                <button class="product-pagination-list__item">
+                    15
+                </button>
+                <button class="product-pagination-list__item">
+                    16
+                </button>
+                <button class="product-pagination-list__item">
+                    17
+                </button>
+                <button class="product-pagination-list__right">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+                <button class="product-pagination-list__right">
+                    <i class="fa-solid fa-angles-right"></i>
+                </button>
+            </div>
+        </section>
         <div class="wrap-footer">
             <footer class="footer">
                 <div class="wave" id="wave1"></div>
@@ -215,6 +287,46 @@
                     </div>
                 </div>
             </footer>
+        </div>
+        <div class="modal-recruit">
+            <div class="modal-recruit-container">
+                <div class="modal-recruit-container__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </div>
+                <div class="modal-recruit-container__contact">
+                    <form action="">
+                        <div class="row justify-content-between">
+                            <div class="col-xl-12 modal-recruit-container__contact--name">
+                                <label for="" class="form-label">Working position</label>
+                                <input type="text" placeholder="UI/UX Designer" class="form-control">
+                            </div>
+                            <div class="col-xl-12 modal-recruit-container__contact--number">
+                                <label for="" class="form-label">Location</label>
+                                <input type="text" placeholder="Ha Noi" class="form-control">
+                            </div>
+                            <div class="col-xl-12 modal-recruit-container__contact--email">
+                                <label for="" class="form-label">Name</label>
+                                <input type="email" placeholder="example*" class="form-control">
+                            </div>
+                            <div class="col-xl-12 modal-recruit-container__contact--phone">
+                                <label for="" class="form-label">Phone Number</label>
+                                <input type="email" placeholder="example*" class="form-control">
+                            </div>
+                            <div class="col-xl-12 modal-recruit-container__contact--content">
+                                <textarea name="" placeholder="decsripttion" id=""
+                                cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="form-image col-xl-6">
+                                <img src="./images/image 30.png" alt="">
+                            </div>
+                            <button class="modal-recruit-container__contact--btn col-xl-6">Send</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
