@@ -101,7 +101,7 @@ video {
 
 html {
   font-size: 62.5%;
-  font-family: Roboto-Bold;
+  font-family: Roboto-Regular;
   line-height: 2em;
   box-sizing: border-box;
 }
@@ -132,27 +132,23 @@ ul {
   margin: 0;
   box-sizing: border-box;
 }
- 
 a {
   text-decoration: none;
   color: #000;
   display: inline-block;
 }
-
-a:hover {
-  color: #000;
-}
-
 img {
   display: block;
   width: 100%;
   height: auto;
 }
-// .slick-next,
-// .slick-prev{
-//   display: none;
-// }
 .header-active {
   color: #FF9330;
   font-weight: bold;
+}
+.base-btn {
+  color: #fff;
+  background-color: #FF9330;
+  border-radius: 1.5rem;
+  border: none;
 }
