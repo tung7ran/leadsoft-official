@@ -1,0 +1,95 @@
+@import 'variables';
+.service-navigation {
+    background: $main;
+    height: 6rem;
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 6rem;
+        &__item {
+            position: relative;
+            &--link {
+                font-size: 1.8rem;
+                font-family: Roboto-Bold;
+                line-height: 2.1rem;
+                color: $white;
+            }
+            span {
+                position: absolute;
+                border-right: 2px solid #fff;
+                height: 80%;
+                top: 50%;
+                transform: translateY(-50%);
+                border-right: 2px solid $white;
+                height: 40%;
+                margin-left: 4rem;
+            }
+            &--link:hover {
+                color: $white;
+            }
+        }
+    }
+    li + li {
+        margin-left: 8rem;
+    }
+}
+.content-service {
+    &-item {
+        padding-top: 14.8rem;
+        padding-bottom: 19.9rem;
+        &__image {
+            img {
+                border-radius: 1.5rem;
+            }
+        }
+        &__info {
+            &--heading {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                color: $main;
+            }
+            &--text{
+                font-size: 1.7rem;
+                line-height: 2.3rem;
+            }
+            &--list {
+                &-item{
+                    font-size: 1.7rem;
+                    line-height: 2.3rem;
+                }
+            }
+            &--btn{       
+                border-radius: 1rem;
+                width: 18.9rem;
+                height: 3.2rem;
+                background: $main;
+                &-link{
+                    font-size: 1.8rem;
+                    line-height: 3.1rem;
+                    color: $white;
+                    display: block;
+                    text-align: center;
+                }
+                &-link:hover {
+                    color: $white;
+                }
+            }
+        }
+
+    }
+    .content-service-item:nth-of-type(2n+1) {
+        background: $white;
+        .content-service-item__info {
+            padding-left: 6.7rem;
+        }
+    }
+    .content-service-item:nth-of-type(2n+2) {
+        background: #f5f5f5;
+        .content-service-item__info {
+            padding-right: 9rem;
+        }
+    }
+}
