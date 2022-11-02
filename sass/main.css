@@ -147,11 +147,6 @@ img {
   height: auto;
 }
 
-.slick-next,
-.slick-prev {
-  display: none;
-}
-
 .header-active {
   color: #FF9330;
   font-weight: bold;
@@ -161,7 +156,7 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  min-height: 100vh;
+  min-height: 60vh;
   background-color: #fff;
 }
 
@@ -332,10 +327,11 @@ img {
   font-family: Roboto-Regular;
   src: url("../font/Roboto-Regular.ttf");
 }
-.product {
-  margin-top: 11rem;
-}
 .product-heading {
+  margin-top: 11rem;
+  margin-bottom: 10.4rem;
+}
+.product-heading-title {
   font-weight: 700;
   color: #FF9330;
   line-height: 5.2rem;
@@ -343,7 +339,7 @@ img {
   text-align: center;
   font-family: Roboto-regular;
 }
-.product-sub {
+.product-heading-sub {
   margin-top: 6.1rem;
   font-weight: 700;
   color: #000;
@@ -351,4 +347,139 @@ img {
   text-align: center;
   line-height: 2.6rem;
   font-family: Roboto-regular;
+}
+
+.product-top-list__item {
+  height: 35rem;
+  position: relative;
+  left: 1rem;
+}
+.product-top-list__item--image {
+  position: absolute;
+  width: 58rem;
+  height: 100%;
+}
+.product-top-list__item--image img {
+  border-radius: 2rem;
+}
+.product-top-list__item--title {
+  font-size: 1.8rem;
+  position: relative;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  color: #fff;
+}
+.product-top-list__item--sub {
+  font-size: 1.6rem;
+  position: relative;
+  margin: 1.5rem 39% 2rem 4rem;
+  height: 8rem;
+  color: #fff;
+}
+.product-top-list__item--button {
+  position: relative;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #F0A21A;
+  padding: 0.8rem 3rem;
+  border-radius: 0.5rem;
+  margin-left: 4rem;
+  border: none;
+}
+
+.product-bottom {
+  margin-top: 10.4rem;
+}
+.product-bottom-list__item {
+  height: 35rem;
+  position: relative;
+  left: 1rem;
+}
+.product-bottom-list__item--image {
+  position: absolute;
+  width: 58rem;
+  height: 100%;
+}
+.product-bottom-list__item--image img {
+  border-radius: 2rem;
+}
+.product-bottom-list__item--title {
+  font-size: 1.8rem;
+  position: relative;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  color: #fff;
+}
+.product-bottom-list__item--sub {
+  font-size: 1.6rem;
+  position: relative;
+  margin: 1.5rem 39% 2rem 4rem;
+  height: 8rem;
+  color: #fff;
+}
+.product-bottom-list__item--button {
+  position: relative;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #F0A21A;
+  padding: 0.8rem 3rem;
+  border-radius: 0.5rem;
+  margin-left: 4rem;
+  border: none;
+}
+
+.product-numerical {
+  margin-top: 6.8rem;
+}
+.product-numerical-list {
+  display: flex;
+  justify-content: center;
+}
+.product-numerical-list__item {
+  padding: 0 1rem;
+  font-size: 1.8rem;
+  color: #252930;
+  font-family: Roboto-regular;
+}
+
+.base-partner {
+  margin-top: 11.4rem;
+}
+.base-partner-heading {
+  text-align: center;
+  margin-bottom: 3.4rem;
+}
+.base-partner-heading__text {
+  color: #FF9330;
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 5rem;
+  font-family: Roboto-regular;
+}
+.base-partner-list {
+  position: relative;
+}
+.base-partner-list__item .margin-image-golfzon {
+  margin-top: 3rem;
+}
+.base-partner-list__item .margin-image-unicidex {
+  margin-top: 6.8em;
+}
+
+.trademark-left {
+  font-size: 8rem;
+  cursor: pointer;
+  position: absolute;
+  color: #FF9330;
+  left: -6%;
+  top: 35px;
+}
+
+.trademark-right {
+  font-size: 8rem;
+  cursor: pointer;
+  position: absolute;
+  color: #FF9330;
+  right: -6%;
+  top: 35px;
 }/*# sourceMappingURL=main.css.map */
