@@ -102,34 +102,4 @@
             }
         }
     }
-    .product-pagination{
-        margin-top: 6.8rem;
-        &-list{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            &__item{
-                padding: 0.5rem 1rem;
-                font-size: 1.8rem;
-                color: $color-number;
-                border: none;
-                background: $white;
-            }
-            &__left,
-            &__right{
-                padding: 0 1rem;
-                font-size: 1.8rem;
-                color: $color-number;
-                border: none;
-                background: $white;
-            }
-            &__item.active { 
-                border: 1px solid #FF9935;
-                border-radius: 50%;
-            }
-        }
-        button + button {
-            margin-left: 1rem;
-        }
-    }
 }
