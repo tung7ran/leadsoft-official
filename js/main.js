@@ -32,5 +32,19 @@ $(document).ready(function(){
         prevArrow:"<i class='trademark-left fa fa-angle-left' aria-hidden='true'></i>",
         nextArrow:"<i class='trademark-right fa fa-angle-right' aria-hidden='true'></i>",
     });
+    $(".content-recruit-outside__btn").click(function(event){
+        $(".modal-recruit").addClass("visible");
+      });
+      
+      $(".modal-recruit-container__close").click(function(){
+        $(".modal-recruit").removeClass("visible");
+      });
+      
+      $(".modal-recruit").click(function() {
+        $(".modal-recruit").removeClass("visible");
+      });
+      $(".modal-recruit-container").click(function(event) {
+        event.stopPropagation();
+    });
 })
 AOS.init();
