@@ -94,12 +94,14 @@ video {
   font: inherit;
   vertical-align: baseline;
   outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
-  font-family: Roboto-Bold;
+  font-family: Roboto-Regular;
   line-height: 2em;
   box-sizing: border-box;
 }
@@ -137,10 +139,6 @@ a {
   display: inline-block;
 }
 
-a:hover {
-  color: #000;
-}
-
 img {
   display: block;
   width: 100%;
@@ -150,6 +148,13 @@ img {
 .header-active {
   color: #FF9330;
   font-weight: bold;
+}
+
+.base-btn {
+  color: #fff;
+  background-color: #FF9330;
+  border-radius: 1.5rem;
+  border: none;
 }
 
 .wrap-footer {
@@ -257,38 +262,25 @@ img {
   z-index: 1000;
   opacity: 0.9;
   bottom: 0;
-  -webkit-animation: animateWave 4s linear infinite;
-          animation: animateWave 4s linear infinite;
+  animation: animateWave 4s linear infinite;
 }
 .footer #wave2 {
   z-index: 999;
   opacity: 0.5;
   bottom: 1rem;
-  -webkit-animation: animateWave_02 4s linear infinite;
-          animation: animateWave_02 4s linear infinite;
+  animation: animateWave_02 4s linear infinite;
 }
 .footer #wave3 {
   z-index: 999;
   opacity: 0.2;
   bottom: 1.5rem;
-  -webkit-animation: animateWave_02 3s linear infinite;
-          animation: animateWave_02 3s linear infinite;
+  animation: animateWave_02 3s linear infinite;
 }
 .footer #wave4 {
   z-index: 999;
   opacity: 0.7;
   bottom: 2rem;
-  -webkit-animation: animateWave_02 3s linear infinite;
-          animation: animateWave_02 3s linear infinite;
-}
-
-@-webkit-keyframes animateWave {
-  0% {
-    background-position-x: 1000px;
-  }
-  100% {
-    background-position-x: 0px;
-  }
+  animation: animateWave_02 3s linear infinite;
 }
 
 @keyframes animateWave {
@@ -297,14 +289,6 @@ img {
   }
   100% {
     background-position-x: 0px;
-  }
-}
-@-webkit-keyframes animateWave_02 {
-  0% {
-    background-position-x: 0px;
-  }
-  100% {
-    background-position-x: 1000px;
   }
 }
 @keyframes animateWave_02 {
@@ -317,6 +301,289 @@ img {
 }
 .header {
   border-bottom: 1px solid #FF9330;
+  height: 8rem;
+}
+.header-body {
+  line-height: 8rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-body-logo {
+  width: 19.2rem;
+  height: 2.5rem;
+}
+.header-body-logo a {
+  display: block;
+}
+.header-body-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-body-menu__item {
+  margin-left: 2.8rem;
+}
+.header-body-menu__item--link {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.header-body-menu__item--link:hover {
+  color: #FF9330;
+}
+
+.banner-home {
+  position: relative;
+}
+.banner-home-btn {
+  position: absolute;
+  bottom: 22.5rem;
+  left: 20rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 1rem 1.3rem;
+}
+.banner-home-btn a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.banner-home-btn__image {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: 0.8rem;
+}
+
+.content-home .home-info {
+  position: relative;
+  background-image: url("../images/actualites-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-home .home-info-body {
+  padding-top: 13.4rem;
+}
+.content-home .home-info-body__title {
+  font-size: 4.2rem;
+  color: #FF9330;
+  text-transform: uppercase;
+  margin-bottom: 2.6rem;
+}
+.content-home .home-info-body__text {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  text-align: justify;
+  margin-bottom: 5.8rem;
+}
+.content-home .home-info-body__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content-home .home-info-body__list-item {
+  width: 50%;
+  margin-bottom: 6.5rem;
+}
+.content-home .home-info-body__list-item--left {
+  width: 6rem;
+  height: 6rem;
+}
+.content-home .home-info-body__list-item--right-heading {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-weight: 700;
+  color: #FF9330;
+}
+.content-home .home-info-body__list-item--right-text {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #6d6d6d;
+}
+.content-home .home-industries {
+  position: relative;
+  margin-bottom: 12.9rem;
+}
+.content-home .home-industries-body__title {
+  font-size: 4.2rem;
+  line-height: 4.9rem;
+  color: #fff;
+  padding-top: 7.9rem;
+  margin-left: 15rem;
+  position: relative;
+}
+.content-home .home-industries-body__title span {
+  position: absolute;
+  width: 11.5rem;
+  bottom: -0.6rem;
+  left: 0;
+  border-bottom: 0.4rem solid #FF9330;
+}
+.content-home .home-industries-body__list {
+  display: flex;
+  padding: 7.5rem 15rem 0;
+}
+.content-home .home-industries-body__list-item {
+  background: #FF7E07;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  margin-right: 1rem;
+  text-align: center;
+  height: 42rem;
+}
+.content-home .home-industries-body__list-item--image {
+  width: 15rem;
+  height: 15rem;
+  margin: 6.5rem auto 0;
+}
+.content-home .home-industries-body__list-item--heading {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #fff;
+  margin: 0.8rem 4.5rem 0.8rem;
+}
+.content-home .home-industries-body__list-item--text {
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: #fff;
+  margin: 0 3rem;
+}
+.content-home .home-industries-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 75.1rem;
+}
+.content-home .home-industries-image img {
+  height: 100%;
+  object-fit: cover;
+}
+.content-home .home-brand {
+  position: relative;
+  height: 59.6rem;
+}
+.content-home .home-brand-body {
+  text-align: right;
+  margin-top: 19.9rem;
+  margin-right: 9.1rem;
+  margin-left: 9rem;
+  padding-top: 11.9rem;
+}
+.content-home .home-brand-body__title {
+  font-size: 3.8rem;
+  line-height: 4.5rem;
+  color: #141414;
+  margin-bottom: 4.9rem;
+}
+.content-home .home-brand-body__text {
+  font-size: 3.6rem;
+  line-height: 4.5rem;
+  color: #FF9330;
+  margin-bottom: 4.9rem;
+}
+.content-home .home-brand-body__list {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+.content-home .home-brand-body__list-item {
+  display: flex;
+}
+.content-home .home-brand-body__list-item .odometer {
+  font-size: 3.6rem;
+  color: #FF9330;
+  line-height: 4.9rem;
+}
+.content-home .home-brand-body__list-item--heading {
+  font-size: 3.6rem;
+  color: #394244;
+  line-height: 4.9rem;
+}
+.content-home .home-brand-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 50%;
+  bottom: 0;
+}
+.content-home .home-brand-image img {
+  height: 100%;
+  object-fit: cover;
+}
+.content-home .home-contact-image {
+  background-image: url("../images/bannercontact.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30%;
+  position: relative;
+}
+.content-home .home-contact-image .home-contact-btn {
+  position: absolute;
+  bottom: 3rem;
+  left: 52.5rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 1rem 1.3rem;
+  background-color: #fff;
+}
+.content-home .home-contact-image .home-contact-btn a {
+  display: flex;
+  align-items: center;
+  color: #FF9330;
+}
+.content-home .home-contact-image .home-contact-btn__image {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: 0.8rem;
+}
+.content-home .home-reason {
+  text-align: center;
+}
+.content-home .home-reason-title {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #030303;
+  margin-top: 15rem;
+}
+.content-home .home-reason-title span {
+  display: block;
+  font-weight: 700;
+  color: #FF9330;
+  font-size: 4.2rem;
+}
+.content-home .home-reason-text {
+  color: #6d6d6d;
+  font-size: 2rem;
+}
+.content-home .home-reason-text span {
+  font-size: 2.4rem;
+  display: block;
+  margin-top: 3rem;
+}
+.content-home .home-reason-list__item {
+  margin-top: 10.8rem;
+}
+.content-home .home-reason-list__item--image {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+}
+.content-home .home-reason-list__item--heading {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 4.1rem;
+}
+.content-home .home-reason-list__item--text {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  text-align: justify;
+  color: #6d6d6d;
+  margin: 0 1.5rem;
+}
+.content-home .home-map iframe {
+  width: 100%;
+  margin-top: 10.2rem;
 }
 
 @font-face {

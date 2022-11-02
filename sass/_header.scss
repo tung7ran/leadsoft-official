@@ -1,4 +1,31 @@
 @import 'variables';
 .header {
     border-bottom: 1px solid $main;
+    height: 8rem;
+    &-body {
+        line-height: 8rem;
+        align-items: center;
+        justify-content: space-between;
+        &-logo {
+            width: 19.2rem;
+            height: 2.5rem;
+            a {
+                display: block;
+            }
+        }
+        &-menu {
+            display: flex;
+            justify-content: flex-end;
+            &__item {
+                margin-left: 2.8rem;
+                &--link {
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                }
+                &--link:hover {
+                    color: $main;
+                }
+            }
+        }
+    }
 }
