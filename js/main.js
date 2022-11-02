@@ -33,3 +33,4 @@ $(document).ready(function(){
         nextArrow:"<i class='trademark-right fa fa-angle-right' aria-hidden='true'></i>",
     });
 })
+AOS.init();
