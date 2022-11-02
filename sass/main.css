@@ -161,7 +161,7 @@ img {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  min-height: 60vh;
+  min-height: 100vh;
   background-color: #fff;
 }
 
@@ -184,6 +184,7 @@ img {
   font-size: 1.8rem;
   line-height: 2.1rem;
   font-family: Roboto-regular;
+  text-align: justify;
 }
 .footer-address-title {
   color: #fff;
@@ -707,6 +708,187 @@ img {
   font-size: 1.8rem;
   color: #252930;
   font-family: Roboto-regular;
+}
+
+.content-recruit {
+  position: relative;
+}
+.content-recruit-image__top {
+  transform: rotate(-14.35deg);
+  width: 115.7rem;
+  height: 128.6rem;
+  position: absolute;
+  right: -11rem;
+}
+.content-recruit-image__bottom {
+  transform: rotate(360deg);
+  width: 115.7rem;
+  height: 128.6rem;
+  position: absolute;
+  left: -10px;
+}
+.content-recruit-title {
+  display: block;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  margin-top: 9.2rem;
+  margin-left: 8.4rem;
+  margin-bottom: 7.3rem;
+  color: #FF9330;
+  font-family: Roboto-Bold;
+}
+.content-recruit-outside {
+  position: relative;
+  width: 114rem;
+  height: 55rem;
+  border: 2px solid #959595;
+  border-radius: 2rem;
+  padding: 4rem 7rem;
+  margin: 0 auto 3rem;
+  background: rgba(255, 255, 255, 0.631372549);
+}
+.content-recruit-outside__top {
+  padding: 0 0 2.1rem 0;
+  position: relative;
+}
+.content-recruit-outside__top--heading {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  font-family: Roboto-Bold;
+}
+.content-recruit-outside__top span {
+  color: #4D4D4D;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-top: 2.2rem;
+  display: block;
+  width: 70%;
+}
+.content-recruit-outside__top span img {
+  width: 1.5rem;
+  height: 2rem;
+  float: left;
+  margin-right: 1rem;
+}
+.content-recruit-outside__top--btn {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  border: none;
+  margin-left: 6.6rem;
+  color: #FF9330;
+  position: absolute;
+  right: 20rem;
+  bottom: 2rem;
+  background: transparent;
+  font-family: Roboto-Bold;
+}
+.content-recruit-outside__info {
+  width: 74rem;
+  margin-top: 2.5rem;
+}
+.content-recruit-outside__info span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #4D4D4D;
+}
+.content-recruit-outside__info--list-item {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #4D4D4D;
+  list-style-type: disc;
+  margin-left: 2.8rem;
+}
+.content-recruit-outside__btn {
+  position: absolute;
+  right: 3.3rem;
+  bottom: 2.7rem;
+  width: 20.7rem;
+  height: 5.5rem;
+  background: #FF9330;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.5em;
+  text-align: center;
+  color: #fff;
+  font-family: Roboto-Bold;
+}
+.content-recruit-outside:last-child {
+  margin-bottom: 10rem;
+}
+
+.contact-image {
+  background-image: url(../images/actualites-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 75.3rem;
+}
+
+.contact-box {
+  background-color: #fff;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+.contact-box-name {
+  margin-bottom: 3.7rem;
+}
+.contact-box .contact-input {
+  width: 48rem;
+  height: 6.3rem;
+  border-radius: 1.5rem;
+  border: 1px solid #A7A7A7;
+  outline: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  padding-left: 3.4rem;
+}
+.contact-box .contact-box-describe {
+  margin-top: 3.7rem;
+}
+.contact-box .contact-textarea {
+  width: 114rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  padding-left: 3.4rem;
+  padding-top: 2rem;
+  border: 1px solid #A7A7A7;
+  outline: none;
+  border-radius: 1.5rem;
+}
+.contact-box .contact-captcha {
+  margin-top: 3.7rem;
+  width: 25.8rem;
+  height: 6.7rem;
+  margin-left: 0rem;
+  transform: translateX(31%);
+}
+.contact-box .contact-submit {
+  margin-top: 4.5rem;
+  background-color: #FF9330;
+  color: #fff;
+  font-size: 2.1rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  font-family: Roboto-Bold;
+  outline: none;
+  border: none;
+  padding: 1.1rem 5rem;
+  border-radius: 1.5rem;
 }
 
 .base-partner {

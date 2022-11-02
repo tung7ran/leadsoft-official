@@ -1,0 +1,119 @@
+@import 'variables';
+
+.content-recruit{
+    position: relative;
+    &-image__top{
+        transform: rotate(-14.35deg);
+        width: 115.7rem;
+        height: 128.6rem;
+        position: absolute;
+        right: -11rem;
+    }
+    &-image__bottom{
+        transform: rotate(360deg);
+        width: 115.7rem;
+        height: 128.6rem;
+        position: absolute;
+        left: -10px;
+    }
+    &-title{
+        display: block;
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+        font-weight: 700;
+        margin-top: 9.2rem;
+        margin-left: 8.4rem;
+        margin-bottom: 7.3rem;
+        color: $main;
+        font-family: Roboto-Bold;
+    }
+    &-outside{
+        position: relative;
+        width: 114rem;
+        height: 55rem;
+        border: 2px solid $border-career;
+        border-radius: 2rem;
+        padding: 4rem 7rem;
+        margin: 0 auto 3rem;
+        background: $backgroung-color-career;
+        &__top{
+            padding: 0 0 2.1rem 0;
+            position: relative;
+            &--heading{
+                font-weight: 700;
+                font-size: 2.4rem;
+                line-height: 3.5rem;
+                font-family: Roboto-Bold;
+            }
+            span{
+                color: $color-career;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                margin-top: 2.2rem;
+                display: block;
+                width: 70%;
+                img{
+                    width: 1.5rem;
+                    height: 2rem;
+                    float: left;
+                    margin-right: 1rem;
+                }
+            }
+            &--btn{
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 2.3rem;
+                border: none;
+                margin-left: 6.6rem;
+                color: $main;
+                position: absolute;
+                right: 20rem;
+                bottom: 2rem;
+                background: transparent;
+                font-family: Roboto-Bold;
+            }
+        }
+        &__info{
+            width: 74rem;
+            margin-top: 2.5rem;
+            span{
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                color: $color-career;
+            }
+            &--list {
+                &-item {
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    color: $color-career;
+
+                    list-style-type: disc;
+                    margin-left: 2.8rem;
+                }   
+            }
+        }
+        &__btn{
+            position: absolute;
+            right: 3.3rem;
+            bottom: 2.7rem;
+            width: 20.7rem;
+            height: 5.5rem;
+            background: $main;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border: none;
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 1.5em;
+            text-align: center;
+            color: $white;
+            font-family: Roboto-Bold;
+        }
+    }
+    &-outside:last-child{ 
+        margin-bottom: 10rem;
+    }
+}

@@ -31,5 +31,6 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         prevArrow:"<i class='trademark-left fa fa-angle-left' aria-hidden='true'></i>",
         nextArrow:"<i class='trademark-right fa fa-angle-right' aria-hidden='true'></i>",
-      });
+    });
 })
+AOS.init();
