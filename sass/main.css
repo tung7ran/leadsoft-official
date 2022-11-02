@@ -99,7 +99,7 @@ video {
 
 html {
   font-size: 62.5%;
-  font-family: Roboto-Bold;
+  font-family: Roboto-Regular;
   line-height: 2em;
   box-sizing: border-box;
 }
@@ -137,10 +137,6 @@ a {
   display: inline-block;
 }
 
-a:hover {
-  color: #000;
-}
-
 img {
   display: block;
   width: 100%;
@@ -150,6 +146,13 @@ img {
 .header-active {
   color: #FF9330;
   font-weight: bold;
+}
+
+.base-btn {
+  color: #fff;
+  background-color: #FF9330;
+  border-radius: 1.5rem;
+  border: none;
 }
 
 .wrap-footer {
@@ -468,7 +471,7 @@ img {
   margin-left: 8.4rem;
   margin-bottom: 7.3rem;
   color: #FF9330;
-  font-family: roboto-regular;
+  font-family: Roboto-Bold;
 }
 .content-recruit-outside {
   position: relative;
@@ -487,6 +490,7 @@ img {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.5rem;
+  font-family: Roboto-Bold;
 }
 .content-recruit-outside__top span {
   color: #4D4D4D;
@@ -496,7 +500,6 @@ img {
   margin-top: 2.2rem;
   display: block;
   width: 70%;
-  font-family: roboto-regular;
 }
 .content-recruit-outside__top span img {
   width: 1.5rem;
@@ -526,14 +529,12 @@ img {
   font-size: 1.6rem;
   line-height: 2.2rem;
   color: #4D4D4D;
-  font-family: roboto-regular;
 }
 .content-recruit-outside__info--list-item {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.2rem;
   color: #4D4D4D;
-  font-family: roboto-regular;
   list-style-type: disc;
   margin-left: 2.8rem;
 }
@@ -552,9 +553,76 @@ img {
   line-height: 1.5em;
   text-align: center;
   color: #fff;
+  font-family: Roboto-Bold;
 }
 .content-recruit-outside:last-child {
   margin-bottom: 10rem;
+}
+
+.contact-image {
+  background-image: url(../images/actualites-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 75.3rem;
+}
+
+.contact-box {
+  background-color: #fff;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+.contact-box-name {
+  margin-bottom: 3.7rem;
+}
+.contact-box .contact-input {
+  width: 48rem;
+  height: 6.3rem;
+  border-radius: 1.5rem;
+  border: 1px solid #A7A7A7;
+  outline: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  padding-left: 3.4rem;
+}
+.contact-box .contact-box-describe {
+  margin-top: 3.7rem;
+}
+.contact-box .contact-textarea {
+  width: 114rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  padding-left: 3.4rem;
+  padding-top: 2rem;
+  border: 1px solid #A7A7A7;
+  outline: none;
+  border-radius: 1.5rem;
+}
+.contact-box .contact-captcha {
+  margin-top: 3.7rem;
+  width: 25.8rem;
+  height: 6.7rem;
+  margin-left: 0rem;
+  transform: translateX(31%);
+}
+.contact-box .contact-submit {
+  margin-top: 4.5rem;
+  background-color: #FF9330;
+  color: #fff;
+  font-size: 2.1rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  font-family: Roboto-Bold;
+  outline: none;
+  border: none;
+  padding: 1.1rem 5rem;
+  border-radius: 1.5rem;
 }
 
 .base-partner {
