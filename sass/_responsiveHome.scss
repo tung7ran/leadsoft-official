@@ -1,0 +1,346 @@
+@import 'variables';
+
+@include responsive_tablet {
+
+}
+@include responsive_tablet-mobile {
+    .banner-home {
+        &-image {
+            padding-top: 50%;
+            position: relative;
+        }
+        &-btn {
+            position: absolute;
+            bottom: 14%;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 1rem 1.3rem;
+            margin-left: 10.5%;
+            &__image {
+                width: 2rem;
+                height: 2rem;
+                margin-left: 0.8rem;
+            }
+        }
+    }
+    .content-home {
+        .home-contact {
+            &-image {
+                height: 81rem;
+                &__mobile {
+                    display: block;
+                    background-image: url('../images/contactMobilejpg.jpg');
+                }
+            }
+            &-btn {
+                bottom: 3rem;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 1rem 1.3rem;
+            }
+        }
+        .home-reason {
+            &-title {
+                font-size: 1.8rem;
+                margin-top: 12.6rem;
+                margin-bottom: 5.7rem;
+                span {
+                    font-size: 2.8rem;
+                }
+            }
+            &-text {
+                font-size: 1.6rem;
+                span {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+@include responsive_mobile {
+    .header {
+        &-body {
+            &-logo {
+                margin-left: 3.4rem;
+            }
+        }
+    }
+    .banner-home {
+        &-btn {
+            padding: 0.5rem 0.8rem;
+            margin-left: 10.5%;
+            font-size: 1.4rem;
+            &__image {
+                width: 2.2rem;
+                height: 2.2rem;
+                margin-left: 0.8rem;
+            }
+        }
+    }
+    .content-home {
+        .home-info {
+            &-body {
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+                &__image {
+                    width: 25rem;
+                    height: 25rem;
+                    margin: 6.3rem auto 0;
+                }
+                &__title { 
+                    text-align: center;
+                    font-size: 2.6rem;
+                    margin-top: 1rem;
+                    margin-bottom: 2.8rem;
+                }
+                &__text {
+                    font-size: 1.8rem;
+                    margin-bottom: 4.7rem;
+                }
+                &__list {
+                    &-item {
+                        &--left {
+                            width: 6rem;
+                            height: 6rem;
+                        }
+                        &--right {
+                            width: 80%;
+                            &-heading {
+                                font-size: 1.8rem;
+                            }
+                            &-text {
+                                font-size: 1.8rem;
+                                margin-bottom: 4.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .home-industries {
+            &-image {
+                padding-bottom: 9%;
+                padding-top: 9%;
+            }
+            &-body {
+                &__title { 
+                    font-size: 2.6rem;
+                    margin-left: 1.5rem;
+                    margin-bottom: 5rem;
+                    span {
+                        width: 8rem;
+                        bottom: -0.6rem;
+                        left: 0;
+                    }
+                }
+                &__list {
+                    overflow: hidden;
+                    &-item {
+                        margin: 0 6rem;
+                        &--image {
+                            width: 14rem;
+                            height: 14rem;
+                            margin: 7.9rem auto 4.4rem;
+                        }
+                        &--heading {
+                            margin-bottom: 2.6rem;
+                        }
+                        &--text {
+                            padding-bottom: 5.8rem;
+                        }
+                    }
+                }
+            }
+        }
+        .home-brand {
+            &-image {
+                margin-left: -20rem;
+                background-position: unset;
+            }
+            &-body {
+                text-align: center;
+                margin-left: 21.5rem;
+                margin-right: 1.5rem;
+                &__title {
+                    font-size: 2.8rem;
+                    margin-top: 7.8rem;
+                }
+                &__text {
+                    font-size: 2.6rem;
+                    margin-top: 6rem;
+                    margin-bottom: 6.6rem;
+                }
+                &__list {
+                    display: block;
+                    padding-bottom: 7.8rem;
+                }
+            }
+        }
+        .home-reason {
+            &-list {
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+                margin-top: 6.7rem;
+                &__item {
+                    &--image {
+                        width: 7.1rem;
+                        height: 9.2rem;
+                        margin: 0 auto;
+                    }
+                    &--heading {
+                        font-size: 2.4rem;
+                        margin-bottom: 2.2rem;
+                    }
+                    &--text {
+                        font-size: 1.8rem;
+                        padding: 0 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive_pc {
+.banner-home {
+    &-image {
+        height: 84.4rem;
+    }
+    &-btn {
+        font-size: 2.4rem;
+        padding: 1rem 1.3rem;
+        margin-left: 10.5%;
+        margin-top: 33%;
+        &__image {
+            width: 3.2rem;
+            height: 3.2rem;
+            margin-left: 0.8rem;
+        }
+    }
+}
+.content-home {
+    .home-info {
+        &-body {
+            padding-top: 13.4rem;
+            &__title {
+                margin-bottom: 2.6rem;
+            }
+            &__text {
+                margin-bottom: 5.8rem;
+            }
+            &__list {
+                &-item {
+                    width: 50%;
+                    margin-bottom: 6.5rem;
+                    &--left {
+                        width: 6rem;
+                        height: 6rem;
+                    }
+                }
+            }
+        }
+    }
+    .home-industries {
+        &-body {
+            &__title {
+                padding-top: 7.9rem;
+                margin-left: 15rem;
+                span {
+                    width: 11.5rem;
+                    bottom: -0.6rem;
+                    left: 0;
+                }
+            }
+            &__list {
+                padding: 7.5rem 11rem 0;
+                &-item {
+                    height: 42rem;
+                    width: 19.47% !important;
+                    &--image {
+                        width: 15rem;
+                        height: 15rem;
+                        margin: 6.5rem auto 0;
+                    }
+                    &--heading {
+                        margin: 0.8rem 4.5rem 0.8rem;
+                    }
+                    &--text {
+                        margin: 0 3rem;
+                    }
+                }
+                li + li {
+                    margin-left: 1rem;
+                }
+            }
+        }
+        &-image {
+            height: 75.1rem;
+        }
+    }
+    .home-brand {
+        height: 59.6rem;
+        &-body {
+            margin-right: 9.1rem;
+            margin-left: 9rem;
+            padding-top: 17rem;
+            &__title {
+                margin-bottom: 4.9rem;
+            }
+            &__text {
+                margin-bottom: 4.9rem;
+            }
+        }
+        &-image {
+            height: 59.9rem;
+        }
+    }
+    .home-contact {
+        &-image {
+            height: 59.9rem;
+            display: block;
+            .home-contact-btn {
+                bottom: 4rem;
+                left: 52.5rem;
+                padding: 1rem 1.3rem;
+                &__image {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    margin-left: 0.8rem;
+                }
+            }
+        }
+    }
+    .home-reason {
+        &-title {
+            margin-top: 15rem;
+        }
+        &-text {
+            span {
+                margin-top: 3rem;
+            }
+        }
+        &-list {
+            &__item {
+                margin-top: 10.8rem;
+                &--image {
+                    width: 10rem;
+                    height: 10rem;
+                    margin: 0 auto;
+                }
+                &--heading {
+                    margin-top: 6rem;
+                    margin-bottom: 4.1rem;
+                }
+                &--text {
+                    margin: 0 1.5rem;
+                }
+            }
+        }
+    }
+    .home-map {
+        iframe {
+            width: 100%;
+            margin-top: 10.2rem;
+        }
+    }
+}
+}
