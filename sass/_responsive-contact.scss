@@ -1,0 +1,45 @@
+@include responsive-mobile{
+    .content-contact-box{
+        padding: 6rem 3rem;
+        width: 95%;
+        &__name,
+        &__company,
+        &__email{
+            margin-bottom: 2rem;
+        }
+        &__describe{
+            margin-top: 2rem;
+        }
+        &__mobile{
+            width: 16.7rem;
+            height: 2.3rem;
+            margin: 0 auto;
+            margin-bottom: 5.7rem;
+        }
+    }
+    
+}
+
+@include responsive-tablet{
+    .content-contact-box{
+        padding: 6rem 3rem;
+        width: 95%;
+        &__name,
+        &__company,
+        &__email{
+            margin-bottom: 2rem;
+        }
+        &__describe{
+            margin-top: 2rem;
+        }
+        &__mobile{
+            display: none;
+        }
+    }
+}
+
+@include responsive_pc{
+    .content-contact-box__mobile{
+        display: none;
+    }
+}
