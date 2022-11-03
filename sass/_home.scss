@@ -1,22 +1,17 @@
 @import 'variables';
 .banner-home {
     position: relative;
+    &-image {
+        background-image: url('../images/bannerhome.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     &-btn {
-        position: absolute;
-        bottom: 22.5rem;
-        left: 20rem;
-        font-size: 2.4rem;
         font-weight: 700;
-        padding: 1rem 1.3rem;
         a {
             display: flex;
             align-items: center;
             color: $white;
-        }
-        &__image {
-            width: 3.2rem;
-            height: 3.2rem;
-            margin-left: 0.8rem;
         }
     }
 }
@@ -27,29 +22,20 @@
         background-repeat: no-repeat;
         background-size: cover;
         &-body {
-            padding-top: 13.4rem;
             &__title {
                 font-size: 4.2rem;
                 color: $main;
                 text-transform: uppercase;
-                margin-bottom: 2.6rem;
             }
             &__text {
                 font-size: 2.4rem;
                 line-height: 2.8rem;
                 text-align: justify;
-                margin-bottom: 5.8rem;
             }
             &__list {
                 display: flex;
                 flex-wrap: wrap;
                 &-item {
-                    width: 50%;
-                    margin-bottom: 6.5rem;
-                    &--left {
-                        width: 6rem;
-                        height: 6rem;
-                    }
                     &--right {
                         &-heading {
                             font-size: 1.8rem;
@@ -58,9 +44,9 @@
                             color: $main;
                         }
                         &-text {
+                            color: $color-text;
                             font-size: 1.8rem;
                             line-height: 2.1rem;
-                            color: $color-text;
                         }
                     }
                 }
@@ -69,86 +55,62 @@
     }
     .home-industries {
         position: relative;
-        margin-bottom: 12.9rem;
         &-body {
             &__title {
                 font-size: 4.2rem;
                 line-height: 4.9rem;
                 color: $white;
-                padding-top: 7.9rem;
-                margin-left: 15rem;
                 position: relative;
                 span {
                     position: absolute;
-                    width: 11.5rem;
-                    bottom: -0.6rem;
-                    left: 0;
                     border-bottom: 0.4rem solid $main;
                 }
             }
             &__list {
                 display: flex;
-                padding: 7.5rem 15rem 0;
                 &-item {
                     background: #FF7E07;
                     border: 3px solid $white;
                     border-radius: 15px;
-                    margin-right: 1rem;
                     text-align: center;
-                    height: 42rem;
-                    &--image {
-                        width: 15rem;
-                        height: 15rem;
-                        margin: 6.5rem auto 0;
-                    }
                     &--heading {
                         font-size: 1.8rem;
                         line-height: 2.1rem;
                         color: $white;
-                        margin: 0.8rem 4.5rem 0.8rem;
                     }
                     &--text {
                         font-size: 1.6rem;
                         line-height: 2.1rem;
                         color: $white;
-                        margin: 0 3rem;
                     }
                 }
             }
         }
         &-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: -1;
-            height: 75.1rem;
-            img {
-                height: 100%;
-                object-fit: cover;
-            }
+            background-image: url('../images/bg5.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
     }
     .home-brand {
         position: relative;
-        height: 59.6rem;
+        &-image {
+            background-image: url('../images/global-02.png');
+            background-repeat: no-repeat;
+            background-position: right;
+        }
         &-body {
             text-align: right;
-            margin-top: 19.9rem;
-            margin-right: 9.1rem;
-            margin-left: 9rem;
-            padding-top: 11.9rem;
             &__title {
                 font-size: 3.8rem;
                 line-height: 4.5rem;
                 color: #141414;
-                margin-bottom: 4.9rem;
             }
             &__text {
                 font-size: 3.6rem;
                 line-height: 4.5rem;
                 color: $main;
-                margin-bottom: 4.9rem;
             }
             &__list {
                 display: flex;
@@ -156,57 +118,39 @@
                 justify-content: space-between;
                 &-item {
                     display: flex;
-                    .odometer {
+                    .count {
                         font-size: 3.6rem;
-                        color: $main;
                         line-height: 4.9rem;
+                        color: $main;
                     }
                     &--heading {
-                        font-size: 3.6rem;
                         color: #394244;
+                        font-size: 3.6rem;
                         line-height: 4.9rem;
                     }
                 }
-            }
-        }
-        &-image {
-            position: absolute;
-            top: 0;
-            right: 0;
-            left: 50%;
-            bottom: 0;
-            img {
-                height: 100%;
-                object-fit: cover;
             }
         }
     }
     .home-contact {
         &-image {
-            background-image: url('../images/bannercontact.png');
+            background-image: url('../images/bannercontact.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            // height: 50.9rem;
-            padding-top: 30%;
             position: relative;
+            &__mobile {
+                display: none;
+            }
             .home-contact-btn {
                 position: absolute;
-                bottom: 3rem;
-                left: 52.5rem;
-                font-size: 2.4rem;
                 font-weight: 700;
-                padding: 1rem 1.3rem;
                 background-color: $white;
+                font-size: 2.4rem;
                 a {
                     display: flex;
                     align-items: center;
                     color: $main;
-                }
-                &__image {
-                    width: 3.2rem;
-                    height: 3.2rem;
-                    margin-left: 0.8rem;
                 }
             }
         }
@@ -214,10 +158,9 @@
     .home-reason {
         text-align: center;
         &-title {
+            color: #030303;
             font-size: 2.4rem;
             line-height: 2.8rem;
-            color: #030303;
-            margin-top: 15rem;
             span {
                 display: block;
                 font-weight: 700;
@@ -229,40 +172,24 @@
             color: #6d6d6d;
             font-size: 2rem;
             span {
-                font-size: 2.4rem;
                 display: block;
-                margin-top: 3rem;
+                font-size: 2.4rem;
             }
         }
         &-list {
             &__item {
-                margin-top: 10.8rem;
-                &--image {
-                    width: 10rem;
-                    height: 10rem;
-                    margin: 0 auto;
-                }
                 &--heading {
+                    text-align: center;
                     font-size: 3rem;
                     line-height: 3.5rem;
-                    text-align: center;
-                    margin-top: 6rem;
-                    margin-bottom: 4.1rem;
                 }
                 &--text {
-                    font-size: 2.4rem;
-                    line-height: 2.8rem;
                     text-align: justify;
                     color: #6d6d6d;
-                    margin: 0 1.5rem;
+                    font-size: 2.4rem;
+                    line-height: 2.8rem;
                 }
             }
-        }
-    }
-    .home-map {
-        iframe {
-            width: 100%;
-            margin-top: 10.2rem;
         }
     }
 }
