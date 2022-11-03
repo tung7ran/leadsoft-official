@@ -1,0 +1,30 @@
+@include responsive_mobile{
+    .footer-logo{
+        text-align: -webkit-center;
+    }
+    .footer-logo-describe{
+        p{
+            text-align: center;
+            margin-top: 1.2rem;
+            padding-right: 0rem;
+        }
+    }
+    .footer-address{
+        text-align: center;
+    }
+    .footer-social{
+        text-align: center;
+    }
+    .footer-social-icon__list{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-copyright{
+        display: flex;
+        text-align: center;
+        flex-direction: column-reverse;
+        p{  
+            margin-top: 1.2rem;
+        }
+    }
+}

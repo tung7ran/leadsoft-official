@@ -1,0 +1,148 @@
+@include responsive_mobile {
+        .content-recruit{
+            &-image {
+                right: -73rem;
+            }
+            &-title{
+                width: 86%;
+                margin: 7.6rem auto 9.1rem;
+                text-align: center;
+            }
+            &-outside{
+                width: 45rem;
+                height: 81.5rem;
+                padding: 3.2rem 2.3rem;
+                &__top{
+                    padding: 0 0 4.1rem 0;
+                    span{
+                        width: 90%;
+                        img{
+                            width: 0.9rem;
+                            height: 1.5rem;
+                            margin-right: 1rem;
+                            margin-top: 0.5rem;
+                        }
+                    }
+                    &--btn{
+                        right: 0;
+                        bottom: 1rem;
+                    }
+                }
+                &__info{
+                    width: 100%;
+                    &--list {
+                        &-item {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+                &__btn{
+                    width: 16.5rem;
+                    height: 4.8rem;
+                    font-size: 1.8rem;
+                    line-height: 2.5em;
+                    left: 0; 
+                    right: 0; 
+                    margin-left: auto; 
+                    margin-right: auto; 
+                    margin-top: 2.2rem;
+                    margin-bottom: 2.2rem;
+                }
+            }
+            &-outside:last-child{ 
+                margin-bottom: 6rem;
+                width: 100%;
+                height: 100%;
+                padding-bottom: 12rem;
+            }
+        }
+}
+
+@include responsive-tablet{
+    .content-recruit{
+        &-image {
+            right: -22rem;
+        }
+        &-title{
+            width: 100%;
+            margin: 4.6rem auto 5.1rem;
+        }
+        &-outside{
+            width: 100%;
+            height: 58rem;
+            padding: 4rem;
+            &__top{
+                span{
+                    width: 100%;
+                    img{
+                        width: 0.9rem;
+                        height: 1.5rem;
+                        margin-right: 1rem;
+                        margin-top: 0.5rem;
+                    }
+                }
+                &--btn{
+                    right: 0;
+                }
+            }
+            &__info{
+                width: 100%;
+                &--list {
+                    &-item {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+            &__btn{
+                padding-bottom: 0.5rem;
+            }
+        }
+        &-outside:last-child{ 
+            margin-bottom: 6rem;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 12rem;
+        }
+    }
+}
+
+@include responsive-pc{
+    .content-recruit{
+        &-outside{
+            width: 100%;
+            height: 58rem;
+            padding: 4rem;
+            &__top{
+                span{
+                    width: 100%;
+                    img{
+                        width: 0.9rem;
+                        height: 1.5rem;
+                        margin-right: 1rem;
+                        margin-top: 0.5rem;
+                    }
+                }
+                &--btn{
+                    right: 0;
+                }
+            }
+            &__info{
+                width: 100%;
+                &--list {
+                    &-item {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+            &__btn{
+                padding-bottom: 0.5rem;
+            }
+        }
+        &-outside:last-child{ 
+            margin-bottom: 6rem;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 12rem;
+        }
+    }
+}

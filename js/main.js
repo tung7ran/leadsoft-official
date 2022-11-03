@@ -6,10 +6,46 @@ $(document).ready(function(){
         dots: false,
         centerMode: true,
         focusOnSelect: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         nextArrow: false,
         prevArrow: false,
+        responsive: [
+          {
+            breakpoint: 1022,
+            settings: {
+              centerMode: false,
+              slidesToShow: 3,
+              slidesToScroll: 2,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              centerMode: false,
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              centerMode: false,
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              centerMode: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
     });
 
     $('.product-bottom-list').slick({
@@ -22,6 +58,42 @@ $(document).ready(function(){
         autoplaySpeed: 4000,
         nextArrow: false,
         prevArrow: false,
+        responsive: [
+          {
+            breakpoint: 1022,
+            settings: {
+              centerMode: false,
+              slidesToShow: 3,
+              slidesToScroll: 2,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              centerMode: false,
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              centerMode: false,
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              centerMode: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
     });
 
     $('.base-partner-list').slick({
@@ -31,6 +103,48 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         prevArrow:"<i class='trademark-left fa fa-angle-left' aria-hidden='true'></i>",
         nextArrow:"<i class='trademark-right fa fa-angle-right' aria-hidden='true'></i>",
+        responsive: [
+          {
+            breakpoint: 1022,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 740,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2,
+              dots:true
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              dots:true
+            }
+          }
+        ]
     });
     $(".content-recruit-outside__btn").click(function(event){
         $(".modal-recruit").addClass("visible");
