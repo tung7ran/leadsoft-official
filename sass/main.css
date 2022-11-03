@@ -1313,6 +1313,56 @@ img {
     padding-bottom: 12rem;
   }
 }
+@media (min-width: 360px) and (max-width:739px) {
+  .content-contact-box {
+    padding: 6rem 3rem;
+    width: 95%;
+  }
+  .content-contact-box__name {
+    margin-bottom: 2rem;
+  }
+  .content-contact-box__company {
+    margin-bottom: 2rem;
+  }
+  .content-contact-box__email {
+    margin-bottom: 2rem;
+  }
+  .content-contact-box__describe {
+    margin-top: 2rem;
+  }
+  .content-contact-box__mobile {
+    width: 16.7rem;
+    height: 2.3rem;
+    margin: 0 auto;
+    margin-bottom: 5.7rem;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .content-contact-box {
+    padding: 6rem 3rem;
+    width: 95%;
+  }
+  .content-contact-box__name {
+    margin-bottom: 2rem;
+  }
+  .content-contact-box__company {
+    margin-bottom: 2rem;
+  }
+  .content-contact-box__email {
+    margin-bottom: 2rem;
+  }
+  .content-contact-box__describe {
+    margin-top: 2rem;
+  }
+  .content-contact-box__mobile {
+    display: none;
+  }
+}
+@media (min-width:1024px) {
+  .content-contact-box__mobile {
+    display: none;
+  }
+}
 .base-partner {
   margin-top: 11.4rem;
 }
