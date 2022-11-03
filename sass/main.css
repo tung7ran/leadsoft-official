@@ -1318,13 +1318,7 @@ img {
     padding: 6rem 3rem;
     width: 95%;
   }
-  .content-contact-box__name {
-    margin-bottom: 2rem;
-  }
-  .content-contact-box__company {
-    margin-bottom: 2rem;
-  }
-  .content-contact-box__email {
+  .content-contact-box__name, .content-contact-box__company, .content-contact-box__email {
     margin-bottom: 2rem;
   }
   .content-contact-box__describe {
@@ -1342,13 +1336,7 @@ img {
     padding: 6rem 3rem;
     width: 95%;
   }
-  .content-contact-box__name {
-    margin-bottom: 2rem;
-  }
-  .content-contact-box__company {
-    margin-bottom: 2rem;
-  }
-  .content-contact-box__email {
+  .content-contact-box__name, .content-contact-box__company, .content-contact-box__email {
     margin-bottom: 2rem;
   }
   .content-contact-box__describe {

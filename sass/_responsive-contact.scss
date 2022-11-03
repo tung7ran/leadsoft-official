@@ -2,12 +2,8 @@
     .content-contact-box{
         padding: 6rem 3rem;
         width: 95%;
-        &__name{
-            margin-bottom: 2rem;
-        }
-        &__company{
-            margin-bottom: 2rem;
-        }
+        &__name,
+        &__company,
         &__email{
             margin-bottom: 2rem;
         }
@@ -28,12 +24,8 @@
     .content-contact-box{
         padding: 6rem 3rem;
         width: 95%;
-        &__name{
-            margin-bottom: 2rem;
-        }
-        &__company{
-            margin-bottom: 2rem;
-        }
+        &__name,
+        &__company,
         &__email{
             margin-bottom: 2rem;
         }
