@@ -38,7 +38,7 @@ $(document).ready(function(){
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 739,
             settings: {
               centerMode: false,
               slidesToShow: 1,
@@ -69,7 +69,7 @@ $(document).ready(function(){
             }
           },
           {
-            breakpoint: 768,
+            breakpoint: 769,
             settings: {
               centerMode: false,
               slidesToShow: 2,
@@ -86,7 +86,7 @@ $(document).ready(function(){
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 739,
             settings: {
               centerMode: false,
               slidesToShow: 1,
