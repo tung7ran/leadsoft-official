@@ -10,6 +10,7 @@
 @import 'contact';
 @import 'responsive-footer';
 @import 'responsive-product';
+@import 'responsive-career';
 
 .base-partner{
     margin-top: 11.4rem;
@@ -199,5 +200,101 @@
     to {
         opacity: 1;
         transform: 0;
+    }
+}
+
+@include responsive_mobile{
+    .modal-recruit-container{
+        width: 95%;
+        &__contact{
+            padding: 0 3rem;
+        }
+        &__contact--name{
+            padding-top: 5rem;
+            display: block;
+        }
+        &__contact--email , 
+        &__contact--number ,
+        &__contact--phone{
+            display: block;
+        }
+        &__contact .form-control{
+            width: 100%;
+            padding: 1.8rem 0rem 1.8rem 2.2rem;
+            margin-bottom: 1.4rem;
+        }
+        &__contact .form-label{
+            margin-bottom: 1.4rem;
+        }
+        &__contact--content textarea{
+            margin-top: 1.4rem;
+        }
+        &__contact--btn{
+            margin-bottom: 3.4rem;
+        }
+    }
+
+    .base-partner{
+        margin-top: 3.8rem !important;
+        margin-bottom: 15rem;
+        &-heading__text{
+            font-size: 2.8rem !important;
+        }
+    }
+    .trademark-right{
+        display: none !important; 
+    }
+    .trademark-left{
+        display: none !important; 
+    }
+    .base-partner-list__item {
+        text-align: center;
+    }
+    .base-partner-list__item--link{
+        width: 14rem;
+    }
+    .base-partner-list__item .margin-image-unicidex {
+        margin-top: 5.2rem !important;
+    }
+    .slick-dots{
+        display: flex  !important;
+        justify-content: center;
+        margin-top: 1.8rem;
+    }
+    .slick-dots{
+        li{
+            margin: 0 0.5rem;
+        }
+    }
+    .slick-dots{
+        button{
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            padding: 0;
+            border: none;
+            border-radius: 100%;
+            background-color: $slick-dots;
+            text-indent: -9999px;
+        }
+    }
+    .slick-dots li.slick-active button {
+        background-color: $slick-dots-active;
+    }
+}
+
+@include responsive-tablet{
+    .base-partner{
+        margin-top: 6.4rem !important;
+        margin-bottom: 16rem;
+        &-list__item{
+            text-align: center;
+        }
+    }
+    .trademark-left {
+        left: -3% !important;
+    }
+    .trademark-right {
+        right: -3% !important;
     }
 }
