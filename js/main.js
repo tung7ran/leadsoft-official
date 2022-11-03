@@ -99,7 +99,7 @@ $(document).ready(function(){
     $('.base-partner-list').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         prevArrow:"<i class='trademark-left fa fa-angle-left' aria-hidden='true'></i>",
         nextArrow:"<i class='trademark-right fa fa-angle-right' aria-hidden='true'></i>",
@@ -204,6 +204,22 @@ $(document).ready(function(){
     });
     $('.home-reason-list').slick({
       slidesToShow: 3,
+      dots: false,
+      nextArrow: true,
+      prevArrow: true,
+      responsive: [
+        {
+          breakpoint: 481,
+          settings: {
+            slidesToShow: 1,
+            autoplaySpeed: 3000,
+            autoplay: true,
+          }
+        }
+      ]
+    });
+    $('.content-service').slick({
+      slidesToShow: 6,
       dots: false,
       nextArrow: true,
       prevArrow: true,
