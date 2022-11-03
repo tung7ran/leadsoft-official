@@ -44,6 +44,7 @@
     &-item {
         padding-top: 14.8rem;
         padding-bottom: 19.9rem;
+        width: 100% !important;
         &__image {
             img {
                 border-radius: 1.5rem;
@@ -68,11 +69,12 @@
                 }
             }
             &--btn{       
-                border-radius: 1rem;
-                width: 18.9rem;
                 height: 3.2rem;
-                background: $main;
+                width: 100%;
                 &-link{
+                    border-radius: 1rem;
+                    width: 18.9rem;
+                    background: $main;
                     font-size: 1.8rem;
                     line-height: 3.1rem;
                     color: $white;

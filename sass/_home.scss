@@ -127,6 +127,9 @@
                         color: #394244;
                         font-size: 3.6rem;
                         line-height: 4.9rem;
+                        span {
+                            color: $main;
+                        }
                     }
                 }
             }
