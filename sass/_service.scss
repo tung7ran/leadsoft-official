@@ -10,10 +10,16 @@
         &__item {
             position: relative;
             &--link {
+                position: relative;
+                right: 0;
                 font-size: 1.8rem;
                 font-family: Roboto-Bold;
                 line-height: 2.1rem;
                 color: $white;
+                transition: top linear 0.04s;
+            }
+            &--link:hover { 
+                top: -0.4rem;
             }
             span {
                 position: absolute;

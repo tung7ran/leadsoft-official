@@ -160,5 +160,89 @@ $(document).ready(function(){
       $(".modal-recruit-container").click(function(event) {
         event.stopPropagation();
     });
+    $('.js-moblie-navbar').click(function() { 
+      $('.js-mobile-menu').toggleClass('show'); 
+      $('.mobile-menu-overlay').toggleClass('show');  
+      if($('.js-mobile-menu').hasClass('show') === true) {
+        $('.navbar-mobile').css("color", "#000")
+      } else { 
+        $('.navbar-mobile').css("color", "#fff")
+      }
+    })
+    $(".mobile-menu-overlay").click(function() {
+      $('.js-mobile-menu').addClass('show'); 
+      $('.mobile-menu-overlay').toggleClass('show');
+      if($('.js-mobile-menu').hasClass('show') === true) {
+        $('.navbar-mobile').css("color", "#000")
+      } else { 
+        $('.navbar-mobile').css("color", "#fff")
+      } 
+    });
+    $('.home-industries-body__list').slick({
+      slidesToShow: 5,
+      dots: false,
+      nextArrow: true,
+      prevArrow: true,
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            autoplaySpeed: 3000,
+            autoplay: true,
+          }
+        },
+        {
+          breakpoint: 481,
+          settings: {
+            slidesToShow: 1,
+            autoplaySpeed: 3000,
+            autoplay: true,
+          }
+        }
+      ]
+    });
+    $('.home-reason-list').slick({
+      slidesToShow: 3,
+      dots: false,
+      nextArrow: true,
+      prevArrow: true,
+      responsive: [
+        {
+          breakpoint: 481,
+          settings: {
+            slidesToShow: 1,
+            autoplaySpeed: 3000,
+            autoplay: true,
+          }
+        }
+      ]
+    });
+    var mybutton = $("#myBtn");
+    var offSetTop = 100;
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > offSetTop)  {
+          mybutton.css("display","block");
+      } else {
+          mybutton.css("display","none");
+      }
+    });
+    mybutton.click(function() {
+      $(window).scrollTop({
+        top: 0,
+        behavior: "smooth",
+      })
+    })
+    $('.count').each(function () {
+      $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+      }, {
+          duration: 1000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+      });
+    });
 })
 AOS.init();
