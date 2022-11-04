@@ -8,6 +8,7 @@
                 display: block;
                 position: fixed;
                 top: 0;
+                left: 0;
                 bottom: 0;
                 z-index: 12;
                 background-color: #383838;
@@ -55,6 +56,23 @@
             to {
                 opacity: 1;
                 transform: 0;
+            }
+        }
+    }
+}
+@include responsive_tablet {
+    .header {
+        &-body {
+            &-logo {
+                width: 16.2rem;
+            }
+            &-menu {
+                &__item {
+                    margin-left: 1.8rem;
+                    &--link {
+                        font-size: 1.4rem;
+                    }
+                }
             }
         }
     }
