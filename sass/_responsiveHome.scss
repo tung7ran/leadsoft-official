@@ -265,6 +265,27 @@
             margin-left: 0.8rem;
         }
     }
+    .slick-dots{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 3.2rem;
+        li{
+            margin: 0.5rem 0;
+        }
+    }
+    .slick-dots{
+        button{
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            padding: 0;
+            border: none;
+            border-radius: 100%;
+            background-color: $slick-dots;
+            text-indent: -9999px;
+        }
+    }
 }
 .content-home {
     .home-info {
@@ -292,7 +313,6 @@
         &-body {
             &__title {
                 padding-top: 7.9rem;
-                margin-left: 15rem;
                 span {
                     width: 11.5rem;
                     bottom: -0.6rem;
@@ -310,10 +330,10 @@
                         margin: 4.5rem auto 0;
                     }
                     &--heading {
-                        margin: 3.8rem 3.5rem 0.8rem;
+                        margin: 3.8rem 1.5rem 0.8rem;
                     }
                     &--text {
-                        margin: 14rem 3rem 0;
+                        margin: 14rem 1rem 0;
                     }
                 }
                 li + li {
@@ -332,8 +352,6 @@
     .home-brand {
         height: 59.6rem;
         &-body {
-            margin-right: 9.1rem;
-            margin-left: 9rem;
             padding-top: 17rem;
             &__title {
                 margin-bottom: 4.9rem;
@@ -347,18 +365,19 @@
         }
     }
     .home-contact {
+        position: relative;
         &-image {
-            height: 59.9rem;
+            padding-top: 31%;
             display: block;
-            .home-contact-btn {
-                bottom: 4rem;
-                left: 52.5rem;
-                padding: 1rem 1.3rem;
-                &__image {
-                    width: 3.2rem;
-                    height: 3.2rem;
-                    margin-left: 0.8rem;
-                }
+        }
+        .home-contact-btn {
+            bottom: 4rem;
+            left: 52.5rem;
+            padding: 1rem 1.3rem;
+            &__image {
+                width: 3.2rem;
+                height: 3.2rem;
+                margin-left: 0.8rem;
             }
         }
     }

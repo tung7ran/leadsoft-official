@@ -121,10 +121,10 @@
                         transform: translateY(-30px);
                     }
                     .home-industries-body__list-item--heading {
-                        transform: translateY(-30px);
+                        transform: translateY(-51px);
                     }
                     p {
-                        margin-top: 0rem;
+                        margin-top: -5rem;
                         transition-delay: 0.2s;
                         opacity: 1;
                         visibility: visible;
@@ -154,7 +154,7 @@
                 color: #141414;
             }
             &__text {
-                font-size: 3.6rem;
+                font-size: 3.1rem;
                 line-height: 4.5rem;
                 color: $main;
             }
@@ -165,13 +165,13 @@
                 &-item {
                     display: flex;
                     .count {
-                        font-size: 3.6rem;
+                        font-size: 3rem;
                         line-height: 4.9rem;
                         color: $main;
                     }
                     &--heading {
                         color: #394244;
-                        font-size: 3.6rem;
+                        font-size: 3rem;
                         line-height: 4.9rem;
                         span {
                             color: $main;
@@ -191,16 +191,16 @@
             &__mobile {
                 display: none;
             }
-            .home-contact-btn {
-                position: absolute;
-                font-weight: 700;
-                background-color: $white;
-                font-size: 2.4rem;
-                a {
-                    display: flex;
-                    align-items: center;
-                    color: $main;
-                }
+        }
+        .home-contact-btn {
+            position: absolute;
+            font-weight: 700;
+            background-color: $white;
+            font-size: 2.4rem;
+            a {
+                display: flex;
+                align-items: center;
+                color: $main;
             }
         }
     }
