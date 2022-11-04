@@ -1,7 +1,127 @@
 @import 'variables';
 
 @include responsive_tablet {
+    .banner-home{
+        &-outside{
+            &__image1,
+            &__image2{
+                height: 50rem;
+                object-fit: cover;
 
+            }
+        }
+        &-heading{
+            top: 40%;
+            transform: translateY(-50%);
+            left: 10%;
+            font-size: 2.6rem;
+            line-height: 3.2rem;
+
+        }
+        &-text{
+            left: 10%;
+            top: 55%;
+            right: 10%;
+        }
+    }
+
+    .content-home{
+        .home-info{
+            padding-top: 6rem;
+            padding-bottom: 3rem;
+            &-body{
+                &__image{
+                    width: 20rem;
+                }
+                &__title{
+                    line-height: 4rem;
+                    padding-bottom: 2rem;
+                }
+                &__text{
+                    font-size: 2rem;
+                    line-height: 2.2rem;
+                }
+                &__list{
+                    margin-top: 2rem;
+                    &-item{
+                        margin: 1.5rem 0;
+                        &--left{
+                            img{
+                                width: 60%;
+                                margin: 0 auto;
+                            }
+                        }
+                        &--right{
+                            &-heading{
+                                padding-bottom: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .home-brand{
+            &-image{
+                height: 50rem;
+                display: flex;
+                align-items: center;
+                padding: 0 2rem;
+                .home-brand-body{
+                    &__list{
+                        margin-top: 2rem;
+                        &-item{
+                            display: flex;
+                            align-items: center;
+                            &--heading{
+                                font-size: 2rem;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .home-contact{
+            &-image{
+                height: 30rem;
+            }
+            &-btn{
+                bottom: 2rem;
+                padding: 0.5rem 1rem;
+                left: 20%;
+                a{
+                    font-size: 1.8rem;
+                    .home-contact-btn__image{
+                        width: 2.2rem;
+                        height: 2.2rem;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+        .home-reason{
+            &-list{
+                margin-top: 8rem;
+                &__item{
+                    display: block;
+                    padding: 0 1rem;
+                    &--image{
+                        width: 8rem;
+                        height: 15rem;
+                        margin: 0 auto;
+                    }
+                    &--heading{
+                        font-size: 2.8rem;
+
+                    }
+                    &--text{
+                        margin-top: 2rem;
+                        text-align: -webkit-auto;
+                    }
+                }
+            }
+        }
+    }
 }
 @include responsive_tablet-mobile {
     .banner-home {
@@ -24,25 +144,11 @@
         }
     }
     .content-home {
-        .home-contact {
-            &-image {
-                height: 81rem;
-                &__mobile {
-                    display: block;
-                    background-image: url('../images/contactMobilejpg.jpg');
-                }
-            }
-            &-btn {
-                bottom: 3rem;
-                left: 50%;
-                transform: translateX(-50%);
-                padding: 1rem 1.3rem;
-            }
-        }
+        
         .home-reason {
+            margin-top: 12.6rem;
             &-title {
                 font-size: 1.8rem;
-                margin-top: 12.6rem;
                 margin-bottom: 5.7rem;
                 span {
                     font-size: 2.8rem;
@@ -55,6 +161,7 @@
                 }
             }
         }
+      
     }
 }
 @include responsive_mobile {
@@ -70,6 +177,7 @@
             padding: 0.5rem 0.8rem;
             margin-left: 10.5%;
             font-size: 1.4rem;
+            display: none;
             &__image {
                 width: 2.2rem;
                 height: 2.2rem;
@@ -178,8 +286,16 @@
         }
         .home-contact {
             &-image {
-                padding-top: 89%;
-                padding-bottom: 89%;
+                background-image: url('../images/contactMobilejpg.jpg');
+                height: 81rem;
+               
+            }
+            &-btn{
+                bottom: 3rem;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 1rem 1.3rem;
+
             }
         }
         .home-brand {
@@ -236,6 +352,7 @@
                 }
             }
         }
+      
     }
 }
 @include responsive_pc {
@@ -249,6 +366,9 @@
     &-heading {
         margin-left: 10.5%;
         bottom: 45.7rem;
+        font-size: 6rem;
+        line-height: 7rem;
+
     }
     &-text {
         margin-left: 10.5%;
@@ -296,6 +416,8 @@
             }
             &__text {
                 margin-bottom: 5.8rem;
+                font-size: 2.4rem;
+                line-height: 2.8rem;
             }
             &__list {
                 &-item {
@@ -359,6 +481,14 @@
             &__text {
                 margin-bottom: 4.9rem;
             }
+            &__list{
+                &-item{
+                    &--heading{
+                        font-size: 3rem;
+                        line-height: 4.9rem;
+                    }
+                }
+            }
         }
         &-image {
             height: 59.9rem;
@@ -401,18 +531,18 @@
                 &--heading {
                     margin-top: 6rem;
                     margin-bottom: 4.1rem;
+                    font-size: 3rem;
                 }
                 &--text {
                     margin: 0 1.5rem;
+                    text-align: justify;
+
                 }
             }
         }
     }
-    .home-map {
-        iframe {
-            width: 100%;
-            margin-top: 10.2rem;
-        }
+    .home-map{
+        margin-top: 10rem;
     }
 }
 }
