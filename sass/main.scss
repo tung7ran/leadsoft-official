@@ -27,8 +27,6 @@
     }
     &-list{
         position: relative;
-        // display: flex;
-        // align-items: center;
     }
 }
 
@@ -175,13 +173,28 @@
     position: fixed;
     bottom: 7rem;
     right: 3rem;
-    width: 4rem;
-    height: 4rem;
+    width: 5.2rem;
+    height: 4.9rem;
     border: 1px solid #fff;
     outline: none;
     cursor: pointer;
     border-radius: 0.5rem;
     background: transparent;
+    z-index: 12;
+    box-shadow: 15px 15px 38px 0 rgb(0 0 0 / 20%);
+    -webkit-box-shadow: 15px 15px 38px 0 rgb(0 0 0 / 20%);
+}
+.message-btn {
+    position: fixed;
+    bottom: 14.5rem;
+    right: 3rem;
+    width: 5.5rem;
+    height: 5.6rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #FF9935;
     z-index: 12;
     box-shadow: 15px 15px 38px 0 rgb(0 0 0 / 20%);
     -webkit-box-shadow: 15px 15px 38px 0 rgb(0 0 0 / 20%);
@@ -273,7 +286,9 @@
 }
 @include responsive_tablet-mobile {
     .base-banner {
-        &-service { 
+        &-service,
+        &-product,
+        &-career { 
             padding-top: 50%;
         }
     }

@@ -1,4 +1,7 @@
 @include responsive_mobile{
+    .wrap-footer {
+        min-height:106vh;
+    }
     .footer-logo{
         text-align: -webkit-center;
     }

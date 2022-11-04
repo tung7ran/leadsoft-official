@@ -198,6 +198,8 @@ $(document).ready(function(){
             slidesToShow: 1,
             autoplaySpeed: 3000,
             autoplay: true,
+            prevArrow:"<i class='industries-left fa fa-angle-left' aria-hidden='true'></i>",
+            nextArrow:"<i class='industries-right fa fa-angle-right' aria-hidden='true'></i>",
           }
         }
       ]
@@ -214,6 +216,7 @@ $(document).ready(function(){
             slidesToShow: 1,
             autoplaySpeed: 3000,
             autoplay: true,
+            dots:true
           }
         }
       ]
@@ -230,6 +233,24 @@ $(document).ready(function(){
             slidesToShow: 1,
             autoplaySpeed: 3000,
             autoplay: true,
+            dots:true
+          }
+        }
+      ]
+    });
+    $('.banner-home-outside').slick({
+      slidesToShow: 1,
+      autoplaySpeed: 3000,
+      autoplay: true,
+      dots: true,
+      nextArrow: false,
+      prevArrow: false,
+      responsive: [
+        {
+          breakpoint: 481,
+          settings: {
+            slidesToShow: 1,
+            dots:false,
           }
         }
       ]
@@ -253,7 +274,7 @@ $(document).ready(function(){
       $(this).prop('Counter',0).animate({
           Counter: $(this).text()
       }, {
-          duration: 1000,
+          duration: 2000,
           easing: 'swing',
           step: function (now) {
               $(this).text(Math.ceil(now));

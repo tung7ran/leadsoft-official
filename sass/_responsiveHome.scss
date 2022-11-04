@@ -134,22 +134,46 @@
                     }
                 }
                 &__list {
-                    overflow: hidden;
+                    position: relative;
                     &-item {
                         margin: 0 6rem;
                         &--image {
                             width: 14rem;
                             height: 14rem;
                             margin: 7.9rem auto 4.4rem;
+                            transition: none;
                         }
                         &--heading {
-                            margin-bottom: 2.6rem;
+                            margin: 2.6rem;
+                            font-size: 2rem;
+                            transition: none;
                         }
                         &--text {
                             padding-bottom: 5.8rem;
+                            visibility: unset;
+                            opacity: 1;
+                            font-size: 1.7rem;
                         }
                     }
                 }
+            }
+            .industries-right {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 1rem;
+                font-size: 6rem;
+                color: $white;
+                z-index: 1;
+            }
+            .industries-left{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 1rem;
+                font-size: 6rem;
+                color: $white;
+                z-index: 1;
             }
         }
         .home-contact {
@@ -207,7 +231,7 @@
                     }
                     &--text {
                         font-size: 1.8rem;
-                        padding: 0 0.8rem;
+                        padding: 0 0.8rem 1rem;
                     }
                 }
             }
@@ -216,14 +240,25 @@
 }
 @include responsive_pc {
 .banner-home {
-    &-image {
-        height: 84.4rem;
+    &-outside {
+        &__image1,
+        &__image2 {
+            height: 84.4rem;
+        }
+    }
+    &-heading {
+        margin-left: 10.5%;
+        bottom: 45.7rem;
+    }
+    &-text {
+        margin-left: 10.5%;
+        bottom: 40.9rem;
     }
     &-btn {
         font-size: 2.4rem;
         padding: 1rem 1.3rem;
         margin-left: 10.5%;
-        margin-top: 33%;
+        bottom: 30.5rem;
         &__image {
             width: 3.2rem;
             height: 3.2rem;
@@ -265,20 +300,20 @@
                 }
             }
             &__list {
-                padding: 7.5rem 11rem 0;
+                padding: 7.5rem 0 0;
                 &-item {
-                    height: 42rem;
-                    width: 19.47% !important;
+                    height: 32rem;
+                    width: 100% !important;
                     &--image {
-                        width: 15rem;
-                        height: 15rem;
-                        margin: 6.5rem auto 0;
+                        width: 11rem;
+                        height: 11rem;
+                        margin: 4.5rem auto 0;
                     }
                     &--heading {
-                        margin: 0.8rem 4.5rem 0.8rem;
+                        margin: 3.8rem 3.5rem 0.8rem;
                     }
                     &--text {
-                        margin: 0 3rem;
+                        margin: 14rem 3rem 0;
                     }
                 }
                 li + li {
@@ -288,6 +323,10 @@
         }
         &-image {
             height: 75.1rem;
+        }
+        .industries-left,
+        .industries-right {
+            display: none;
         }
     }
     .home-brand {

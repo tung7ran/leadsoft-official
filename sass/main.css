@@ -338,12 +338,31 @@ img {
 .banner-home {
   position: relative;
 }
-.banner-home-image {
-  background-image: url("../images/bannerhome.png");
+.banner-home-outside__image1 {
+  background-image: url("../images/bannerhome2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+.banner-home-outside__image2 {
+  background-image: url("../images/bannerhome1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-home-heading {
+  position: absolute;
+  font-size: 6rem;
+  font-family: Roboto-Bold;
+  line-height: 7rem;
+  color: #fff;
+}
+.banner-home-text {
+  position: absolute;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #fff;
+}
 .banner-home-btn {
+  position: absolute;
   font-weight: 700;
 }
 .banner-home-btn a {
@@ -396,24 +415,45 @@ img {
   position: absolute;
   border-bottom: 0.4rem solid #FF9330;
 }
-.content-home .home-industries-body__list {
+.content-home .home-industries-body__list .slick-track {
   display: flex;
+  justify-content: center;
 }
 .content-home .home-industries-body__list-item {
   background: #FF7E07;
   border: 3px solid #fff;
   border-radius: 15px;
   text-align: center;
+  cursor: pointer;
+}
+.content-home .home-industries-body__list-item--image {
+  transition: 1s ease-in-out;
 }
 .content-home .home-industries-body__list-item--heading {
   font-size: 1.8rem;
   line-height: 2.1rem;
   color: #fff;
+  transition: 1s ease-in-out;
 }
 .content-home .home-industries-body__list-item--text {
   font-size: 1.6rem;
   line-height: 2.1rem;
   color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.content-home .home-industries-body__list-item:hover .home-industries-body__list-item--image {
+  transform: translateY(-30px);
+}
+.content-home .home-industries-body__list-item:hover .home-industries-body__list-item--heading {
+  transform: translateY(-30px);
+}
+.content-home .home-industries-body__list-item:hover p {
+  margin-top: 0rem;
+  transition-delay: 0.2s;
+  opacity: 1;
+  visibility: visible;
 }
 .content-home .home-industries-image {
   background-image: url("../images/bg5.png");
@@ -921,6 +961,9 @@ img {
 }
 
 @media (min-width: 360px) and (max-width:739px) {
+  .wrap-footer {
+    min-height: 106vh;
+  }
   .footer-logo {
     text-align: -webkit-center;
   }
@@ -1435,7 +1478,7 @@ img {
     left: 0;
   }
   .content-home .home-industries-body__list {
-    overflow: hidden;
+    position: relative;
   }
   .content-home .home-industries-body__list-item {
     margin: 0 6rem;
@@ -1444,12 +1487,36 @@ img {
     width: 14rem;
     height: 14rem;
     margin: 7.9rem auto 4.4rem;
+    transition: none;
   }
   .content-home .home-industries-body__list-item--heading {
-    margin-bottom: 2.6rem;
+    margin: 2.6rem;
+    font-size: 2rem;
+    transition: none;
   }
   .content-home .home-industries-body__list-item--text {
     padding-bottom: 5.8rem;
+    visibility: unset;
+    opacity: 1;
+    font-size: 1.7rem;
+  }
+  .content-home .home-industries .industries-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    font-size: 6rem;
+    color: #fff;
+    z-index: 1;
+  }
+  .content-home .home-industries .industries-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    font-size: 6rem;
+    color: #fff;
+    z-index: 1;
   }
   .content-home .home-contact-image {
     padding-top: 89%;
@@ -1499,18 +1566,26 @@ img {
   }
   .content-home .home-reason-list__item--text {
     font-size: 1.8rem;
-    padding: 0 0.8rem;
+    padding: 0 0.8rem 1rem;
   }
 }
 @media (min-width:1024px) {
-  .banner-home-image {
+  .banner-home-outside__image1, .banner-home-outside__image2 {
     height: 84.4rem;
+  }
+  .banner-home-heading {
+    margin-left: 10.5%;
+    bottom: 45.7rem;
+  }
+  .banner-home-text {
+    margin-left: 10.5%;
+    bottom: 40.9rem;
   }
   .banner-home-btn {
     font-size: 2.4rem;
     padding: 1rem 1.3rem;
     margin-left: 10.5%;
-    margin-top: 33%;
+    bottom: 30.5rem;
   }
   .banner-home-btn__image {
     width: 3.2rem;
@@ -1544,28 +1619,32 @@ img {
     left: 0;
   }
   .content-home .home-industries-body__list {
-    padding: 7.5rem 11rem 0;
+    padding: 7.5rem 0 0;
   }
   .content-home .home-industries-body__list-item {
-    height: 42rem;
-    width: 19.47% !important;
+    height: 32rem;
+    width: 100% !important;
   }
   .content-home .home-industries-body__list-item--image {
-    width: 15rem;
-    height: 15rem;
-    margin: 6.5rem auto 0;
+    width: 11rem;
+    height: 11rem;
+    margin: 4.5rem auto 0;
   }
   .content-home .home-industries-body__list-item--heading {
-    margin: 0.8rem 4.5rem 0.8rem;
+    margin: 3.8rem 3.5rem 0.8rem;
   }
   .content-home .home-industries-body__list-item--text {
-    margin: 0 3rem;
+    margin: 14rem 3rem 0;
   }
   .content-home .home-industries-body__list li + li {
     margin-left: 1rem;
   }
   .content-home .home-industries-image {
     height: 75.1rem;
+  }
+  .content-home .home-industries .industries-left,
+.content-home .home-industries .industries-right {
+    display: none;
   }
   .content-home .home-brand {
     height: 59.6rem;
@@ -1632,6 +1711,7 @@ img {
     width: 480px !important;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
+    padding-bottom: 0;
   }
   .content-service-item__info--heading {
     margin-top: 2.2rem;
@@ -1807,13 +1887,29 @@ img {
   position: fixed;
   bottom: 7rem;
   right: 3rem;
-  width: 4rem;
-  height: 4rem;
+  width: 5.2rem;
+  height: 4.9rem;
   border: 1px solid #fff;
   outline: none;
   cursor: pointer;
   border-radius: 0.5rem;
   background: transparent;
+  z-index: 12;
+  box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.2);
+}
+
+.message-btn {
+  position: fixed;
+  bottom: 14.5rem;
+  right: 3rem;
+  width: 5.5rem;
+  height: 5.6rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #FF9935;
   z-index: 12;
   box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.2);
@@ -1893,7 +1989,7 @@ img {
   }
 }
 @media (max-width: 1023px) {
-  .base-banner-service {
+  .base-banner-service, .base-banner-product, .base-banner-career {
     padding-top: 50%;
   }
 }
