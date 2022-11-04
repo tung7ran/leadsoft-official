@@ -15,7 +15,6 @@
 @import 'responsiveHeader';
 @import 'responsiveHome';
 @import 'responsiveService';
-
 .base-partner{
     &-heading{
         text-align: center;
@@ -398,5 +397,20 @@
     }
     .slick-dots li.slick-active button {
         background-color: $slick-dots-active;
+    }
+}
+@include responsive-tablet{
+    .base-partner{
+        margin-top: 6.4rem !important;
+        margin-bottom: 16rem;
+        &-list__item{
+            text-align: center;
+        }
+    }
+    .trademark-left {
+        left: -2% !important;
+    }
+    .trademark-right {
+        right: -2% !important;
     }
 }
