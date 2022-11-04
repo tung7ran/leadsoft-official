@@ -6,22 +6,22 @@ $(document).ready(function(){
         dots: false,
         centerMode: true,
         focusOnSelect: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
         nextArrow: false,
         prevArrow: false,
         responsive: [
           {
-            breakpoint: 1022,
+            breakpoint: 1024,
             settings: {
               centerMode: false,
-              slidesToShow: 3,
+              slidesToShow: 2,
               slidesToScroll: 2,
               infinite: true,
             }
           },
           {
-            breakpoint: 768,
+            breakpoint: 741,
             settings: {
               centerMode: false,
               slidesToShow: 2,
@@ -31,14 +31,6 @@ $(document).ready(function(){
           },
           {
             breakpoint: 740,
-            settings: {
-              centerMode: false,
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 480,
             settings: {
               centerMode: false,
               slidesToShow: 1,
@@ -60,16 +52,16 @@ $(document).ready(function(){
         prevArrow: false,
         responsive: [
           {
-            breakpoint: 1022,
+            breakpoint: 1024,
             settings: {
               centerMode: false,
-              slidesToShow: 3,
+              slidesToShow: 2,
               slidesToScroll: 2,
               infinite: true,
             }
           },
           {
-            breakpoint: 768,
+            breakpoint: 741,
             settings: {
               centerMode: false,
               slidesToShow: 2,
@@ -79,14 +71,6 @@ $(document).ready(function(){
           },
           {
             breakpoint: 740,
-            settings: {
-              centerMode: false,
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 480,
             settings: {
               centerMode: false,
               slidesToShow: 1,
@@ -99,13 +83,21 @@ $(document).ready(function(){
     $('.base-partner-list').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         prevArrow:"<i class='trademark-left fa fa-angle-left' aria-hidden='true'></i>",
         nextArrow:"<i class='trademark-right fa fa-angle-right' aria-hidden='true'></i>",
         responsive: [
           {
-            breakpoint: 1022,
+            breakpoint: 1366,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 2,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 1024,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 2,
@@ -115,7 +107,7 @@ $(document).ready(function(){
           {
             breakpoint: 992,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2,
               slidesToScroll: 2,
               infinite: true,
             }
@@ -131,7 +123,7 @@ $(document).ready(function(){
           {
             breakpoint: 740,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2,
               slidesToScroll: 2,
               dots:true
             }
@@ -146,6 +138,7 @@ $(document).ready(function(){
           }
         ]
     });
+
     $(".content-recruit-outside__btn").click(function(event){
         $(".modal-recruit").addClass("visible");
       });
