@@ -1,12 +1,33 @@
 @import 'variables';
 .banner-home {
     position: relative;
-    &-image {
-        background-image: url('../images/bannerhome.png');
-        background-repeat: no-repeat;
-        background-size: cover;
+    &-outside {
+        &__image1 {
+            background-image: url('../images/bannerhome2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &__image2 {
+            background-image: url('../images/bannerhome1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &-heading {
+        position: absolute;
+        font-size: 6rem;
+        font-family: Roboto-Bold;
+        line-height: 7rem;
+        color: $white;
+    }
+    &-text {
+        position: absolute;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        color: $white;
     }
     &-btn {
+        position: absolute;
         font-weight: 700;
         a {
             display: flex;
@@ -67,21 +88,46 @@
                 }
             }
             &__list {
-                display: flex;
+                .slick-track {
+                    display: flex;
+                    justify-content: center;
+                }
                 &-item {
                     background: #FF7E07;
                     border: 3px solid $white;
                     border-radius: 15px;
                     text-align: center;
+                    cursor: pointer;
+                    &--image {
+                        transition: 1s ease-in-out;
+                    }
                     &--heading {
                         font-size: 1.8rem;
                         line-height: 2.1rem;
                         color: $white;
+                        transition: 1s ease-in-out;
                     }
                     &--text {
                         font-size: 1.6rem;
                         line-height: 2.1rem;
                         color: $white;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: 0.5s;
+                    }
+                }
+                &-item:hover { 
+                    .home-industries-body__list-item--image {
+                        transform: translateY(-30px);
+                    }
+                    .home-industries-body__list-item--heading {
+                        transform: translateY(-51px);
+                    }
+                    p {
+                        margin-top: -5rem;
+                        transition-delay: 0.2s;
+                        opacity: 1;
+                        visibility: visible;
                     }
                 }
             }
@@ -108,7 +154,7 @@
                 color: #141414;
             }
             &__text {
-                font-size: 3.6rem;
+                font-size: 3.1rem;
                 line-height: 4.5rem;
                 color: $main;
             }
@@ -119,14 +165,17 @@
                 &-item {
                     display: flex;
                     .count {
-                        font-size: 3.6rem;
+                        font-size: 3rem;
                         line-height: 4.9rem;
                         color: $main;
                     }
                     &--heading {
                         color: #394244;
-                        font-size: 3.6rem;
+                        font-size: 3rem;
                         line-height: 4.9rem;
+                        span {
+                            color: $main;
+                        }
                     }
                 }
             }
@@ -142,16 +191,16 @@
             &__mobile {
                 display: none;
             }
-            .home-contact-btn {
-                position: absolute;
-                font-weight: 700;
-                background-color: $white;
-                font-size: 2.4rem;
-                a {
-                    display: flex;
-                    align-items: center;
-                    color: $main;
-                }
+        }
+        .home-contact-btn {
+            position: absolute;
+            font-weight: 700;
+            background-color: $white;
+            font-size: 2.4rem;
+            a {
+                display: flex;
+                align-items: center;
+                color: $main;
             }
         }
     }
