@@ -25,6 +25,22 @@
                         margin-top: 0.5rem;
                     }
                 }
+                &__info{
+                    width: 100%;
+                    &--list {
+                        &-item {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+                &__btn{
+                    width: 16.5rem;
+                    height: 4.8rem;
+                    font-size: 1.8rem;
+                    line-height: 2.5em;
+                    left: 0; 
+                    right: 0; 
+                    margin: 2.2 auto;
                 &--btn{
                     right: 0;
                     bottom: 1rem;
@@ -59,7 +75,7 @@
         }
     }
 }
-
+}
 @include responsive-tablet{
     .content-recruit{
         &-image {
@@ -147,4 +163,4 @@
             padding-bottom: 12rem;
         }
     }
-}
+} 
