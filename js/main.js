@@ -180,7 +180,7 @@ $(document).ready(function(){
         {
           breakpoint: 769,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             autoplaySpeed: 3000,
             autoplay: true,
           }

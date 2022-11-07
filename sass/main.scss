@@ -18,10 +18,13 @@
 .base-partner{
     &-heading{
         text-align: center;
+        margin-bottom: 3.4rem;
         &__text{
             color: $main;
             font-weight: 700;
             font-family: Roboto-regular;
+            font-size: 4.2rem;
+            line-height: 5rem;
         }
     }
     &-list{
@@ -33,13 +36,20 @@
     cursor: pointer;
     position: absolute;
     color: $main;
+    font-size: 8rem;
+    left: -6%;
+    top: 35px;
 }
 .trademark-right{
     cursor: pointer;
     position: absolute;
     color: $main;
+    font-size: 8rem;
+    right: -6%;
+    top: 35px;
 }
 .product-pagination{
+    margin-top: 6.8rem;
     &-list{
         display: flex;
         align-items: center;
@@ -48,17 +58,24 @@
             color: $color-number;
             border: none;
             background: $white;
+            padding: 0.5rem 1rem;
+            font-size: 1.8rem;
         }
         &__left,
         &__right{
             color: $color-number;
             border: none;
             background: $white;
+            padding: 0 1rem;
+            font-size: 1.8rem;
         }
         &__item.active { 
             border: 1px solid #FF9935;
             border-radius: 50%;
         }
+    }
+    button + button {
+        margin-left: 1rem;
     }
 }
 .base-banner {
@@ -201,13 +218,6 @@
 @include responsive_pc {
     .base-partner{
         margin-top: 11.4rem;
-        &-heading{
-            margin-bottom: 3.4rem;
-            &__text{
-                font-size: 4.2rem;
-                line-height: 5rem;
-            }
-        }
         &-list{
             &__item{
                 .margin-image-golfzon{
@@ -217,34 +227,6 @@
                     margin-top: 6.8em;
                 }
             }
-        }
-    }
-    
-    .trademark-left{
-        font-size: 8rem;
-        left: -6%;
-        top: 35px;
-    }
-    .trademark-right{
-        font-size: 8rem;
-        right: -6%;
-        top: 35px;
-    }
-    .product-pagination{
-        margin-top: 6.8rem;
-        &-list{
-            &__item{
-                padding: 0.5rem 1rem;
-                font-size: 1.8rem;
-            }
-            &__left,
-            &__right{
-                padding: 0 1rem;
-                font-size: 1.8rem;
-            }
-        }
-        button + button {
-            margin-left: 1rem;
         }
     }
     .base-banner {
@@ -397,20 +379,5 @@
     }
     .slick-dots li.slick-active button {
         background-color: $slick-dots-active;
-    }
-}
-@include responsive-tablet{
-    .base-partner{
-        margin-top: 6.4rem !important;
-        margin-bottom: 16rem;
-        &-list__item{
-            text-align: center;
-        }
-    }
-    .trademark-left {
-        left: -2% !important;
-    }
-    .trademark-right {
-        right: -2% !important;
     }
 }
