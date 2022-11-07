@@ -15,9 +15,7 @@
     }
     &-heading {
         position: absolute;
-        font-size: 6rem;
         font-family: Roboto-Bold;
-        line-height: 7rem;
         color: $white;
     }
     &-text {
@@ -49,8 +47,7 @@
                 text-transform: uppercase;
             }
             &__text {
-                font-size: 2.4rem;
-                line-height: 2.8rem;
+                
                 text-align: justify;
             }
             &__list {
@@ -171,8 +168,7 @@
                     }
                     &--heading {
                         color: #394244;
-                        font-size: 3rem;
-                        line-height: 4.9rem;
+                        
                         span {
                             color: $main;
                         }
@@ -182,6 +178,7 @@
         }
     }
     .home-contact {
+        position: relative;
         &-image {
             background-image: url('../images/bannercontact.jpg');
             background-position: center;
@@ -189,7 +186,7 @@
             background-size: cover;
             position: relative;
             &__mobile {
-                display: none;
+                // display: none;
             }
         }
         .home-contact-btn {
@@ -229,16 +226,20 @@
             &__item {
                 &--heading {
                     text-align: center;
-                    font-size: 3rem;
                     line-height: 3.5rem;
                 }
                 &--text {
-                    text-align: justify;
                     color: #6d6d6d;
                     font-size: 2.4rem;
                     line-height: 2.8rem;
                 }
             }
+        }
+    }
+    .home-map{
+        iframe{
+            width: 100%;
+            height: 40rem;
         }
     }
 }

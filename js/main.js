@@ -240,6 +240,15 @@ $(document).ready(function(){
       prevArrow: false,
       responsive: [
         {
+          
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              dots:false,
+            }
+          
+        },
+        {
           breakpoint: 481,
           settings: {
             slidesToShow: 1,
