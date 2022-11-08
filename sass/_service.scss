@@ -1,4 +1,27 @@
 @import 'variables';
+.base-banner {
+    .banner-service {
+        &-heading,
+        &-text {
+            position: absolute;
+            color: $white;
+            font-family: Roboto-Regular;
+            margin-left: 10.5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &-heading {
+            font-size: 4.2rem;
+            line-height: 4.9rem;
+            text-transform: uppercase;
+        }
+        &-text {
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            margin-top: 6.2rem;
+        }
+    }
+}
 .service-navigation {
     background: $main;
     height: 6rem;
@@ -16,16 +39,16 @@
                 font-family: Roboto-Bold;
                 line-height: 2.1rem;
                 color: $white;
-                transition: top linear 0.04s;
+                transition: 1s ease-in-out;
             }
             &--link:hover { 
-                top: -0.4rem;
+                transform: translateY(-0.8rem);
             }
             span {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-                border-right: 2px solid $white;
+                border-right: 0.2rem solid $white;
                 height: 40%;
                 margin-left: 4rem;
             }
@@ -40,13 +63,23 @@
 }
 .content-service {
     &-item {
-        padding-top: 14.8rem;
-        padding-bottom: 19.9rem;
-        width: 100% !important;
+        padding: 14.8rem 0 19.9rem;
+        &__box{
+            display: flex;
+        }
         &__image {
+            overflow: hidden; 
+            border-radius: 1.5rem;
+            cursor: pointer;
+            height: 36rem;
             img {
+                transition: all 0.9s;
+                height: 100%;
                 border-radius: 1.5rem;
             }
+        }
+        &__image:hover img {
+            transform: scale(1.2);
         }
         &__info {
             &--heading {
@@ -93,7 +126,7 @@
         }
     }
     .content-service-item:nth-of-type(2n+2) {
-        background: #f5f5f5;
+        background: $background-color;
         .content-service-item__info {
             padding-right: 9rem;
         }
