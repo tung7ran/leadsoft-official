@@ -1,7 +1,23 @@
 @include responsive-mobile{
+
+    .content-contact-banner{
+        &__wrap{
+            &--title{
+                padding-top: 6rem;
+                font-size: 2.6rem;
+                line-height: 3rem;
+            }
+            &--sub{
+                width: 100%;
+                font-size: 1.8rem;
+                line-height: 2.1rem;
+            }
+        }
+    }
     .content-contact-box{
         padding: 6rem 3rem;
         width: 95%;
+        margin-top: 6rem;
         &__name,
         &__company,
         &__email{
@@ -13,17 +29,39 @@
         &__mobile{
             width: 16.7rem;
             height: 2.3rem;
-            margin: 0 auto;
-            margin-bottom: 5.7rem;
+            margin: 0 auto 5.7rem;
         }
     }
-    
+    .contact-industries{
+        &-heading{
+            font-size: 3.6rem;
+            text-align: center;
+        }
+        &-name{
+            margin-top: 1rem;
+            margin-bottom: 1.2rem;
+        }
+    }
+    .box-center-item{
+        margin-bottom: 5rem;
+    }
 }
 
 @include responsive-tablet{
+    .content-contact-banner{
+        &__wrap{
+            &--title{
+                padding-top: 6rem;
+            }
+            &--sub{
+                width: 100%;
+            }
+        }
+    }
     .content-contact-box{
         padding: 6rem 3rem;
         width: 95%;
+        margin-top: 4rem;
         &__name,
         &__company,
         &__email{
@@ -35,6 +73,9 @@
         &__mobile{
             display: none;
         }
+    }
+    .box-center-item{
+        margin-bottom: 5rem;
     }
 }
 

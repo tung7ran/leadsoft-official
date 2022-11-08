@@ -1,10 +1,7 @@
 @import 'variables';
-.contact-footer {
-    min-height: 42vh;
-}
 .content-contact{
     position: relative;
-    &-banner {
+    &-banner{
         background-image: url(../images/banner-5.png);
         background-size: cover;
         background-position: center;
@@ -12,20 +9,32 @@
         -o-object-fit: cover;
         object-fit: cover;
         height: 65.3rem;
+        &__wrap{
+            &--title{
+                padding-top: 12.2rem;
+                line-height: 4.9rem;
+                font-size: 4.2rem;
+                font-weight: 700;
+                color: $white;
+            }
+            &--sub{
+                margin-top: 2rem;
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 2.3rem;
+                color: $white;
+                width: 50%;
+            }
+        }
     }
-    &-image {
-        background-image: url(../images/actualites-bg.jpg);
+    &-image{
+        background-image: url(../images/background-main.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         -o-object-fit: cover;
         object-fit: cover;
         height: 65.3rem;
-    }
-    &-overlay{
-        position: absolute;
-        inset: 0;
-        background: #ffffff3d;
     }
     &-box{
         background-color: $white;
@@ -36,8 +45,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        box-shadow: 15px 15px 38px 0 rgb(0 0 0 / 20%);
-        -webkit-box-shadow: 15px 15px 38px 0 rgb(0 0 0 / 20%);
+        box-shadow: 1.5rem 1.5rem 3.8rem 0 rgb(0 0 0 / 20%);
+        -webkit-box-shadow: 1.5rem 1.5rem 3.8rem 0 rgb(0 0 0 / 20%);
         &__name{
             margin-bottom:3.7rem;
         }
@@ -45,7 +54,7 @@
             width: 100%;
             height: 6.3rem;
             border-radius: 1.5rem;
-            border: 1px solid $color-contact;
+            border: 0.1rem solid $color-contact;
             outline: none;
             font-size: 1.8rem;
             font-weight: 400;
@@ -59,9 +68,8 @@
                 font-size: 1.8rem;
                 font-weight: 400;
                 line-height: 2.1rem;
-                padding-left: 3.4rem;
-                padding-top: 2rem;
-                border: 1px solid $color-contact;
+                padding: 2rem 0 0 3.4rem;
+                border: 0.1rem solid $color-contact;
                 outline: none;
                 border-radius: 1.5rem;
             }
@@ -70,7 +78,6 @@
             margin-top: 3.7rem;
         }
         &__submit{
-            margin-top: 4.5rem;
             background-color: $main;
             color: $white;
             font-size: 2.1rem;
@@ -79,6 +86,7 @@
             font-family: Roboto-Bold;
             outline: none;
             border: none;
+            margin-top: 4.5rem;
             padding: 1.1rem 5rem;
             border-radius: 1.5rem;
         }
@@ -94,23 +102,22 @@
     &-heading{
         font-weight: 400;
         font-size: 4.2rem;
-        list-style: 4.9rem;
+        line-height: 4.9rem;
         color: $black;
         margin-bottom: 5.6rem;
     }
     &-image{
-        width: 132px;
-        height: 133px;
+        width: 13.2rem;
+        height: 13.3rem;
         margin: 0 auto;
     }
     &-name{
+        font-weight: 400;
         font-size: 1.8rem;
         line-height: 2.1rem;
-        font-weight: 400;
         text-align: center;
         color: $color-contact-industries;
-        margin-top: 2rem;
-        margin-bottom: 2.2rem;
+        margin: 2rem 0 2.2rem;
     }
     &-sub{
         font-size: 1.6rem;
