@@ -1,9 +1,10 @@
+@import 'variables';
 html,
 body {
   overflow-x: hidden;
   font-size: 1.6rem;
   line-height: 1em;
-  color: #000;
+  color: $black;
   box-sizing: border-box;
 }
 
@@ -134,7 +135,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: $black;
   display: inline-block;
 }
 img {
@@ -143,12 +144,17 @@ img {
   height: auto;
 }
 .header-active {
-  color: #FF9330;
+  color: $main;
   font-weight: bold;
 }
 .base-btn {
-  color: #fff;
-  background-color: #FF9330;
+  color: $white;
+  background-color: $main;
   border-radius: 1.5rem;
   border: none;
+}
+
+.slick-next,
+.slick-prev{
+  display: none !important;
 }
