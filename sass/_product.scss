@@ -29,48 +29,48 @@
     }
 }
 .content-product {
-    .product-outside{
+    .product-outside {
         margin: 11rem 0 10.4rem;
         font-family: Roboto-Bold;
         text-align: center;
-        &-title{
+        &-title {
             color: $main;
             line-height: 5.2rem;
             font-size: 3.6rem;
         }
-        &-sub{
+        &-sub {
             margin-top: 6.1rem;
             font-size: 1.8rem;
             line-height: 2.6rem;
         }
     }
-    .product-top{
-        &-list{
-            &__item{
+    .product-top {
+        &-list {
+            &__item {
                 position: relative;
                 left: 1rem;
                 height: 35rem;
                 color: $white;
-                &--image{
+                &--image {
                     position: absolute;
                     width: 58rem;
                     height: 100%;
-                    img{
+                    img {
                         border-radius: 2rem;
                     }
                 }
-                &--title{
+                &--title {
                     font-size: 1.8rem;
                     position: relative;
                     margin: 4rem 0 0 4rem;
                 }
-                &--sub{
+                &--sub {
                     font-size: 1.6rem;
                     position: relative;
                     margin: 1.5rem 39% 2rem 4rem;
                     height: 8rem;
                 }
-                &--button{
+                &--button {
                     position: relative;
                     font-size: 1.6rem;
                     color: $white;
@@ -83,34 +83,34 @@
             }
         }
     }
-    .product-bottom{
+    .product-bottom {
         margin-top: 10.4rem;
-        &-list{
-            &__item{
+        &-list {
+            &__item {
                 height: 35rem;
                 position: relative;
                 left: 1rem;
                 color: $white;
-                &--image{
+                &--image {
                     position: absolute;
                     width: 58rem;
                     height: 100%;
-                    img{
+                    img {
                         border-radius: 2rem;
                     }
                 }
-                &--title{
+                &--title {
                     font-size: 1.8rem;
                     position: relative;
                     margin: 4rem 0 0 4rem;
                 }
-                &--sub{
+                &--sub {
                     font-size: 1.6rem;
                     position: relative;
                     margin: 1.5rem 39% 2rem 4rem;
                     height: 8rem;
                 }
-                &--button{
+                &--button {
                     position: relative;
                     font-size: 1.6rem;
                     color: $white;
@@ -124,4 +124,3 @@
         }
     }
 }
-  

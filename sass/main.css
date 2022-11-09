@@ -180,7 +180,7 @@ img {
 .footer-logo-image {
   width: 22.5rem;
   height: 2.9rem;
-  filter: drop-shadow(0 0.3rem 0.5rem rgba(255, 255, 255, 0.47));
+  filter: drop-shadow(0 0.3rem 0.5rem rgba(255, 255, 255, 0.4705882353));
 }
 .footer-logo-describe p {
   color: #fff;
@@ -703,10 +703,10 @@ img {
   font-family: Roboto-Bold;
   line-height: 2.1rem;
   color: #fff;
-  transition: 1s ease-in-out;
+  transition: 0.2s ease-in;
 }
 .service-navigation-list__item--link:hover {
-  transform: translateY(-0.8rem);
+  transform: translateY(-0.5rem);
 }
 .service-navigation-list__item span {
   position: absolute;
@@ -889,7 +889,7 @@ img {
   width: 20.7rem;
   height: 5.5rem;
   background: #FF9330;
-  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.2509803922);
   border: none;
   border-radius: 2rem;
   font-weight: 700;
@@ -1038,7 +1038,7 @@ img {
 
 @media (min-width: 360px) and (max-width:739px) {
   .wrap-footer {
-    min-height: 116vh;
+    min-height: 80vh;
   }
   .footer-logo {
     text-align: -webkit-center;
@@ -1103,15 +1103,16 @@ img {
   .content-product .product-top-list__item {
     left: 0;
     margin-bottom: -2.5rem;
-    overflow: hidden;
   }
   .content-product .product-top-list__item--sub {
+    overflow: hidden;
     margin: 1.5rem 20% 1rem 4rem;
     height: 4rem;
     text-align: justify;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
   }
   .content-product .product-top-list__item--image {
     width: 93%;
@@ -1131,9 +1132,9 @@ img {
     left: 0;
     height: 32rem;
     margin-bottom: 0.5rem;
-    overflow: hidden;
   }
   .content-product .product-bottom-list__item--sub {
+    overflow: hidden;
     margin: 1.5rem 20% 1rem 4rem;
     height: 4rem;
     text-align: justify;
@@ -1518,7 +1519,7 @@ img {
     position: absolute;
     inset: 0;
     display: none;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5019607843);
     z-index: 13;
   }
   .header .mobile-menu-overlay.show {
@@ -1907,7 +1908,7 @@ img {
     border: none;
     border-radius: 100%;
     background-color: #d9d9d9;
-    text-indent: -999.9rem;
+    overflow: hidden;
   }
   .content-home .home-info-body {
     padding-top: 13.4rem;
@@ -2324,7 +2325,7 @@ img {
   color: #000;
   right: 0;
   top: 0;
-  padding: 15px;
+  padding: 1.5rem;
   cursor: pointer;
   opacity: 0.8;
   font-size: 1.8rem;
@@ -2515,11 +2516,11 @@ img {
     display: block;
     width: 1rem;
     height: 1rem;
-    padding: 0;
     border: none;
     border-radius: 100%;
     background-color: #d9d9d9;
-    text-indent: -999.9rem;
+    overflow: hidden;
+    padding-top: 1rem;
   }
   .slick-dots li.slick-active button {
     background-color: #797979;

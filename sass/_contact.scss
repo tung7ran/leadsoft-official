@@ -1,7 +1,7 @@
 @import 'variables';
-.content-contact{
+.content-contact {
     position: relative;
-    &-banner{
+    &-banner {
         background-image: url(../images/banner-5.png);
         background-size: cover;
         background-position: center;
@@ -9,15 +9,15 @@
         -o-object-fit: cover;
         object-fit: cover;
         height: 65.3rem;
-        &__wrap{
-            &--title{
+        &__wrap {
+            &--title {
                 padding-top: 12.2rem;
                 line-height: 4.9rem;
                 font-size: 4.2rem;
                 font-weight: 700;
                 color: $white;
             }
-            &--sub{
+            &--sub {
                 margin-top: 2rem;
                 font-size: 2rem;
                 font-weight: 700;
@@ -27,7 +27,7 @@
             }
         }
     }
-    &-image{
+    &-image {
         background-image: url(../images/background-main.jpg);
         background-size: cover;
         background-position: center;
@@ -36,7 +36,7 @@
         object-fit: cover;
         height: 65.3rem;
     }
-    &-box{
+    &-box {
         background-color: $white;
         padding: 10rem 3rem;
         border-radius:2rem;
@@ -45,12 +45,12 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        box-shadow: 1.5rem 1.5rem 3.8rem 0 rgb(0 0 0 / 20%);
-        -webkit-box-shadow: 1.5rem 1.5rem 3.8rem 0 rgb(0 0 0 / 20%);
-        &__name{
+        box-shadow: 1.5rem 1.5rem 3.8rem 0 $color-rgb-contact;
+        -webkit-box-shadow: 1.5rem 1.5rem 3.8rem 0 $color-rgb-contact;
+        &__name {
             margin-bottom:3.7rem;
         }
-        .content-contact-box__input{
+        .content-contact-box__input {
             width: 100%;
             height: 6.3rem;
             border-radius: 1.5rem;
@@ -66,9 +66,9 @@
             -webkit-appearance: none;
             margin: 0;
         }
-        &__describe{
+        &__describe {
             margin-top: 3.7rem;
-            &--textarea{
+            &--textarea {
                 width: 100%;
                 font-size: 1.8rem;
                 font-weight: 400;
@@ -79,10 +79,10 @@
                 border-radius: 1.5rem;
             }
         }
-        &__captcha{
+        &__captcha {
             margin-top: 3.7rem;
         }
-        &__submit{
+        &__submit {
             background-color: $main;
             color: $white;
             font-size: 2.1rem;
@@ -97,26 +97,25 @@
         }
     }
 }
-
-.contact-industries{
-    .box-center{
+.contact-industries {
+    .box-center {
         justify-content: center;
     }
     margin-top: 9rem;
     margin-bottom: 10rem;
-    &-heading{
+    &-heading {
         font-weight: 400;
         font-size: 4.2rem;
         line-height: 4.9rem;
         color: $black;
         margin-bottom: 5.6rem;
     }
-    &-image{
+    &-image {
         width: 13.2rem;
         height: 13.3rem;
         margin: 0 auto;
     }
-    &-name{
+    &-name {
         font-weight: 400;
         font-size: 1.8rem;
         line-height: 2.1rem;
@@ -125,7 +124,7 @@
         margin: 2rem 0 2.2rem;
         min-height: 4.2rem;
     }
-    &-sub{
+    &-sub {
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 1.9rem;

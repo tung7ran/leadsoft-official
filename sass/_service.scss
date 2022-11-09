@@ -39,10 +39,10 @@
                 font-family: Roboto-Bold;
                 line-height: 2.1rem;
                 color: $white;
-                transition: 1s ease-in-out;
+                transition: 0.2s ease-in;
             }
             &--link:hover { 
-                transform: translateY(-0.8rem);
+                transform: translateY(-0.5rem);
             }
             span {
                 position: absolute;
@@ -64,7 +64,7 @@
 .content-service {
     &-item {
         padding: 14.8rem 0 19.9rem;
-        &__box{
+        &__box {
             display: flex;
         }
         &__image {
@@ -89,20 +89,20 @@
                 line-height: 2.6rem;
                 color: $main;
             }
-            &--text{
+            &--text {
                 font-size: 1.7rem;
                 line-height: 2.3rem;
             }
             &--list {
-                &-item{
+                &-item {
                     font-size: 1.7rem;
                     line-height: 2.3rem;
                 }
             }
-            &--btn{       
+            &--btn {       
                 height: 3.2rem;
                 width: 100%;
-                &-link{
+                &-link {
                     border-radius: 1rem;
                     width: 18.9rem;
                     background: $main;

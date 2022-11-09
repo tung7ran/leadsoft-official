@@ -1,54 +1,53 @@
 @import 'variables';
-
-@include responsive_tablet{
-    .banner-home{
-        &-outside{
+@include responsive_tablet {
+    .banner-home {
+        &-outside {
             &__image1,
-            &__image2{
+            &__image2 {
                 height: 50rem;
                 object-fit: cover;
             }
         }
-        &-heading{
+        &-heading {
             top: 40%;
             left: 10%;
             transform: translateY(-50%);
             font-size: 2.6rem;
             line-height: 3.2rem;
         }
-        &-text{
+        &-text {
             top: 55%;
             left: 10%;
             right: 10%;
         }
     }
-    .content-home{
-        .home-info{
+    .content-home {
+        .home-info {
             padding: 6rem 0 3rem;
-            &-body{
-                &__image{
+            &-body {
+                &__image {
                     width: 20rem;
                 }
-                &__title{
+                &__title {
                     line-height: 4rem;
                     padding-bottom: 2rem;
                 }
-                &__text{
+                &__text {
                     font-size: 2rem;
                     line-height: 2.2rem;
                 }
-                &__list{
+                &__list {
                     margin-top: 2rem;
-                    &-item{
+                    &-item {
                         margin: 1.5rem 0;
-                        &--left{
-                            img{
+                        &--left {
+                            img {
                                 width: 60%;
                                 margin: 0 auto;
                             }
                         }
-                        &--right{
-                            &-heading{
+                        &--right {
+                            &-heading {
                                 padding-bottom: 1rem;
                             }
                         }
@@ -56,55 +55,55 @@
                 }
             }
         }
-        .home-industries{
-            &-image{
+        .home-industries {
+            &-image {
                 height: 55rem;
             }
-            &-body{
-                &__title{
+            &-body {
+                &__title {
                     padding-top: 5rem;
-                    span{
+                    span {
                         width: 11.5rem;
                         bottom: -0.6rem;
                         left: 0;
                     }
                 }
-                &__list{
+                &__list {
                     padding-top: 4rem;
-                    &-item{
+                    &-item {
                         height: 32rem;
                         width: 100% !important;
                         margin: 0 0.5rem;
-                        &--image{
+                        &--image {
                             width: 10rem;
                             height: 10rem;
                             margin: 4.5rem auto 0;
                         }
-                        &--heading{
+                        &--heading {
                             margin-top: 3.8rem;
                         }
                     }
                 }
             }
         }
-        .home-brand{
-            &-image{
+        .home-brand {
+            &-image {
                 height: 50rem;
                 padding: 0 2rem;
                 display: flex;
                 align-items: center;
-                .home-brand-body{
+                .home-brand-body {
                     width: 100%;
-                    &__list{
+                    &__list {
                         margin-top: 2rem;
                         flex-wrap: wrap;
-                        &-item{
+                        &-item {
                             display: flex;
                             align-items: center;
                             span {
                                 font-size: 2rem;
                             }
-                            &--heading{
+                            &--heading {
                                 font-size: 1.8rem;
                                 font-weight: 600;
                             }
@@ -113,17 +112,17 @@
                 }
             }
         }
-        .home-contact{
-            &-image{
+        .home-contact {
+            &-image {
                 height: 30rem;
             }
-            &-btn{
+            &-btn {
                 bottom: 2rem;
                 padding: 0.5rem 1rem;
                 left: 20%;
-                a{
+                a {
                     font-size: 1.8rem;
-                    .home-contact-btn__image{
+                    .home-contact-btn__image {
                         width: 2.2rem;
                         height: 2.2rem;
                         margin-left: 1rem;
@@ -131,21 +130,21 @@
                 }
             }
         }
-        .home-reason{
-            &-list{
+        .home-reason {
+            &-list {
                 margin-top: 8rem;
-                &__item{
+                &__item {
                     display: block;
                     padding: 0 1rem;
-                    &--image{
+                    &--image {
                         width: 8rem;
                         height: 15rem;
                         margin: 0 auto;
                     }
-                    &--heading{
+                    &--heading {
                         font-size: 2.8rem;
                     }
-                    &--text{
+                    &--text {
                         margin-top: 2rem;
                         text-align: -webkit-auto;
                     }
@@ -154,13 +153,13 @@
         }
     }
 }
-@include responsive_tablet-mobile{
-    .banner-home{
-        &-image{
+@include responsive_tablet-mobile {
+    .banner-home {
+        &-image {
             padding-top: 50%;
             position: relative;
         }
-        &-btn{
+        &-btn {
             position: absolute;
             bottom: 14%;
             font-size: 2rem;
@@ -174,17 +173,17 @@
             }
         }
     }
-    .content-home{
-        .home-reason{
+    .content-home {
+        .home-reason {
             margin-top: 12.6rem;
-            &-title{
+            &-title {
                 font-size: 1.8rem;
                 margin-bottom: 5.7rem;
-                span{
+                span {
                     font-size: 2.8rem;
                 }
             }
-            &-text{
+            &-text {
                 font-size: 1.6rem;
                 span {
                     font-size: 2rem;
@@ -195,15 +194,15 @@
     }
 }
 @include responsive_mobile {
-    .header{
-        &-body{
-            &-logo{
+    .header {
+        &-body {
+            &-logo {
                 margin-left: 3.4rem;
             }
         }
     }
-    .banner-home{
-        &-btn{
+    .banner-home {
+        &-btn {
             padding: 0.5rem 0.8rem;
             margin-left: 10.5%;
             font-size: 1.4rem;
@@ -215,31 +214,31 @@
             }
         }
     }
-    .content-home{
-        .home-info{
-            &-body{
+    .content-home {
+        .home-info {
+            &-body {
                 margin: 0 1.5rem;
-                &__image{
+                &__image {
                     width: 25rem;
                     height: 25rem;
                     margin: 6.3rem auto 0;
                 }
-                &__title{ 
+                &__title { 
                     text-align: center;
                     font-size: 2.6rem;
                     margin: 1rem 0 2.8rem;
                 }
-                &__text{
+                &__text {
                     font-size: 1.8rem;
                     margin-bottom: 4.7rem;
                 }
-                &__list{
-                    &-item{
-                        &--left{
+                &__list {
+                    &-item {
+                        &--left {
                             width: 6rem;
                             height: 6rem;
                         }
-                        &--right{
+                        &--right {
                             width: 80%;
                             font-size: 1.8rem;
                             &-text {
@@ -250,36 +249,36 @@
                 }
             }
         }
-        .home-industries{
+        .home-industries {
             &-image {
                 padding: 9% 0 9%;
             }
-            &-body{
-                &__title{ 
+            &-body {
+                &__title { 
                     font-size: 2.6rem;
                     margin: 0 0 5rem 1.5rem;
-                    span {
+                    span  {
                         width: 8rem;
                         bottom: -0.6rem;
                         left: 0;
                     }
                 }
-                &__list{
+                &__list {
                     position: relative;
-                    &-item{
+                    &-item {
                         margin: 0 6rem;
-                        &--image {
+                        &--image  {
                             width: 14rem;
                             height: 14rem;
                             margin: 7.9rem auto 4.4rem;
                             transition: none;
                         }
-                        &--heading{
+                        &--heading {
                             margin: 2.6rem;
                             font-size: 2rem;
                             transition: none;
                         }
-                        &--text{
+                        &--text {
                             padding-bottom: 5.8rem;
                             margin: 0 1rem;
                             visibility: unset;
@@ -289,7 +288,7 @@
                     }
                 }
             }
-            .industries-right{
+            .industries-right {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
@@ -298,7 +297,7 @@
                 color: $white;
                 z-index: 1;
             }
-            .industries-left{
+            .industries-left {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
@@ -308,255 +307,254 @@
                 z-index: 1;
             }
         }
-        .home-contact{
-            &-image{
+        .home-contact {
+            &-image {
                 background-image: url('../images/contactMobilejpg.jpg');
                 height: 81rem;
             }
-            &-btn{
+            &-btn {
                 bottom: 3rem;
                 left: 50%;
                 transform: translateX(-50%);
                 padding: 1rem 1.3rem;
             }
         }
-        .home-brand{
-            &-image{
+        .home-brand {
+            &-image {
                 margin-left: -20rem;
                 background-position: unset;
             }
-            &-body{
+            &-body {
                 text-align: center;
                 margin: 0 1.5rem 0 21.5rem;
-                &__title{
+                &__title {
                     font-size: 2.8rem;
                     margin-top: 7.8rem;
                 }
-                &__text{
+                &__text {
                     font-size: 2.6rem;
                     margin: 6rem 0 6.6rem;
                 }
-                &__list{
+                &__list {
                     display: block;
                     padding-bottom: 7.8rem;
                     &-item {
-                        .count{
+                        .count {
                             font-size: 3rem;
                         }
-                        &--heading{
+                        &--heading {
                             font-size: 2.6rem;
                         }
                     }
                 }
             }
         }
-        .home-reason{
-            &-list{
+        .home-reason {
+            &-list {
                 margin: 6.7rem 1.5rem 0;
-                &__item{
-                    &--image{
+                &__item {
+                    &--image {
                         width: 7.1rem;
                         height: 9.2rem;
                         margin: 0 auto;
                     }
-                    &--heading{
+                    &--heading {
                         font-size: 2.4rem;
                         margin-bottom: 2.2rem;
                     }
-                    &--text{
+                    &--text {
                         font-size: 1.8rem;
                         padding: 0 0.8rem 1rem;
                     }
                 }
             }
         }
-      
     }
 }
 @include responsive_pc {
-.banner-home{
-    &-outside {
-        &__image1,
-        &__image2{
-            height: 84.4rem;
-        }
-    }
-    &-heading{
-        margin-left: 10.5%;
-        bottom: 45.7rem;
-        font-size: 6rem;
-        line-height: 7rem;
-    }
-    &-text{
-        margin-left: 10.5%;
-        bottom: 40.9rem;
-    }
-    &-btn {
-        font-size: 2.4rem;
-        padding: 1rem 1.3rem;
-        margin-left: 10.5%;
-        bottom: 30.5rem;
-        &__image{
-            width: 3.2rem;
-            height: 3.2rem;
-            margin-left: 0.8rem;
-        }
-    }
-    .slick-dots{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-left: 3.2rem;
-        li{
-            margin: 0.5rem 0;
-        }
-        li.slick-active button {
-            background-color: $slick-dots-active;
-        }
-        button{
-            display: block;
-            width: 0.6rem;
-            height: 0.6rem;
-            padding: 0;
-            border: none;
-            border-radius: 100%;
-            background-color: $slick-dots;
-            text-indent: -999.9rem;
-        }
-    }
-}
-.content-home{
-    .home-info{
-        &-body{
-            padding-top: 13.4rem;
-            &__title{
-                margin-bottom: 2.6rem;
-            }
-            &__text{
-                margin-bottom: 5.8rem;
-                font-size: 2.4rem;
-                line-height: 2.8rem;
-            }
-            &__list{
-                &-item{
-                    width: 50%;
-                    margin-bottom: 6.5rem;
-                    &--left{
-                        width: 6rem;
-                        height: 6rem;
-                    }
-                }
+    .banner-home {
+        &-outside {
+            &__image1,
+            &__image2 {
+                height: 84.4rem;
             }
         }
-    }
-    .home-industries{
-        &-body{
-            &__title{
-                padding-top: 7.9rem;
-                span{
-                    width: 11.5rem;
-                    bottom: -0.6rem;
-                    left: 0;
-                }
-            }
-            &__list{
-                padding: 7.5rem 0 0;
-                &-item {
-                    height: 32rem;
-                    width: 100% !important;
-                    &--image{
-                        width: 11rem;
-                        height: 11rem;
-                        margin: 4.5rem auto 0;
-                    }
-                    &--heading{
-                        margin: 3.8rem 1.5rem 0.8rem;
-                    }
-                    &--text{
-                        margin: 14rem 1rem 0;
-                    }
-                }
-                li + li{
-                    margin-left: 1rem;
-                }
-            }
+        &-heading {
+            margin-left: 10.5%;
+            bottom: 45.7rem;
+            font-size: 6rem;
+            line-height: 7rem;
         }
-        &-image{
-            height: 75.1rem;
+        &-text {
+            margin-left: 10.5%;
+            bottom: 40.9rem;
         }
-        .industries-left,
-        .industries-right{
-            display: none;
-        }
-    }
-    .home-brand{
-        height: 59.6rem;
-        &-body{
-            padding-top: 17rem;
-            &__title,
-            &__text{
-                margin-bottom: 4.9rem;
-            }
-            &__list{
-                &-item{
-                    &--heading{
-                        font-size: 3rem;
-                        line-height: 4.9rem;
-                    }
-                }
-            }
-        }
-        &-image{
-            height: 59.9rem;
-        }
-    }
-    .home-contact{
-        position: relative;
-        &-image{
-            padding-top: 31%;
-            display: block;
-        }
-        .home-contact-btn{
-            bottom: 4rem;
-            margin-left: 27.5%;
+        &-btn {
+            font-size: 2.4rem;
             padding: 1rem 1.3rem;
+            margin-left: 10.5%;
+            bottom: 30.5rem;
             &__image {
                 width: 3.2rem;
                 height: 3.2rem;
                 margin-left: 0.8rem;
             }
         }
-    }
-    .home-reason{
-        &-title{
-            margin-top: 15rem;
-        }
-        &-text{
-            span {
-                margin-top: 3rem;
+        .slick-dots {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 3.2rem;
+            li {
+                margin: 0.5rem 0;
             }
-        }
-        &-list{
-            &__item{
-                margin-top: 10.8rem;
-                &--image{
-                    width: 10rem;
-                    height: 10rem;
-                    margin: 0 auto;
-                }
-                &--heading{
-                    margin: 6rem 0 4.1rem;
-                    font-size: 3rem;
-                }
-                &--text{
-                    margin: 0 1.5rem;
-                    text-align: justify;
-                }
+            li.slick-active button {
+                background-color: $slick-dots-active;
+            }
+            button {
+                display: block;
+                width: 0.6rem;
+                height: 0.6rem;
+                padding: 0;
+                border: none;
+                border-radius: 100%;
+                background-color: $slick-dots;
+                overflow:hidden
             }
         }
     }
-    .base-map{
-        margin-top: 10rem;
+    .content-home {
+        .home-info {
+            &-body {
+                padding-top: 13.4rem;
+                &__title {
+                    margin-bottom: 2.6rem;
+                }
+                &__text {
+                    margin-bottom: 5.8rem;
+                    font-size: 2.4rem;
+                    line-height: 2.8rem;
+                }
+                &__list {
+                    &-item {
+                        width: 50%;
+                        margin-bottom: 6.5rem;
+                        &--left {
+                            width: 6rem;
+                            height: 6rem;
+                        }
+                    }
+                }
+            }
+        }
+        .home-industries {
+            &-body {
+                &__title {
+                    padding-top: 7.9rem;
+                    span {
+                        width: 11.5rem;
+                        bottom: -0.6rem;
+                        left: 0;
+                    }
+                }
+                &__list {
+                    padding: 7.5rem 0 0;
+                    &-item {
+                        height: 32rem;
+                        width: 100% !important;
+                        &--image {
+                            width: 11rem;
+                            height: 11rem;
+                            margin: 4.5rem auto 0;
+                        }
+                        &--heading {
+                            margin: 3.8rem 1.5rem 0.8rem;
+                        }
+                        &--text {
+                            margin: 14rem 1rem 0;
+                        }
+                    }
+                    li + li {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+            &-image {
+                height: 75.1rem;
+            }
+            .industries-left,
+            .industries-right {
+                display: none;
+            }
+        }
+        .home-brand {
+            height: 59.6rem;
+            &-body {
+                padding-top: 17rem;
+                &__title,
+                &__text {
+                    margin-bottom: 4.9rem;
+                }
+                &__list {
+                    &-item {
+                        &--heading {
+                            font-size: 3rem;
+                            line-height: 4.9rem;
+                        }
+                    }
+                }
+            }
+            &-image {
+                height: 59.9rem;
+            }
+        }
+        .home-contact {
+            position: relative;
+            &-image {
+                padding-top: 31%;
+                display: block;
+            }
+            .home-contact-btn {
+                bottom: 4rem;
+                margin-left: 27.5%;
+                padding: 1rem 1.3rem;
+                &__image {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    margin-left: 0.8rem;
+                }
+            }
+        }
+        .home-reason {
+            &-title {
+                margin-top: 15rem;
+            }
+            &-text {
+                span {
+                    margin-top: 3rem;
+                }
+            }
+            &-list {
+                &__item {
+                    margin-top: 10.8rem;
+                    &--image {
+                        width: 10rem;
+                        height: 10rem;
+                        margin: 0 auto;
+                    }
+                    &--heading {
+                        margin: 6rem 0 4.1rem;
+                        font-size: 3rem;
+                    }
+                    &--text {
+                        margin: 0 1.5rem;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+        .base-map {
+            margin-top: 10rem;
+        }
     }
-}
 }

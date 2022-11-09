@@ -1,15 +1,14 @@
 @import 'variables';
-
-.content-recruit{
+.content-recruit {
     position: relative;
-    &-image__top{
+    &-image__top {
         transform: rotate(-14.35deg);
         width: 115.7rem;
         height: 128.6rem;
         position: absolute;
         right: -11rem;
     }
-    &-image__bottom{
+    &-image__bottom {
         transform: rotate(360deg);
         width: 115.7rem;
         height: 128.6rem;
@@ -17,7 +16,7 @@
         left: -1rem;    
         bottom: -42rem;
     }
-    &-title{
+    &-title {
         display: block;
         font-size: 2.4rem;
         font-weight: 700;
@@ -26,7 +25,7 @@
         color: $main;
         font-family: Roboto-Bold;
     }
-    &-outside{
+    &-outside {
         position: relative;
         width: 114rem;
         height: 55rem;
@@ -35,17 +34,17 @@
         padding: 4rem 7rem;
         margin: 0 auto 3rem;
         background: $background-color-career;
-        &__top{
+        &__top {
             padding: 0 0 2.1rem 0;
             position: relative;
             border-bottom: 0.1rem solid $border-bottom-career;
-            &--heading{
+            &--heading {
                 font-weight: 700;
                 font-size: 2.4rem;
                 line-height: 3.5rem;
                 font-family: Roboto-Bold;
             }
-            span{
+            span {
                 color: $color-career;
                 font-weight: 400;
                 font-size: 1.6rem;
@@ -53,14 +52,14 @@
                 margin-top: 2.2rem;
                 display: block;
                 width: 70%;
-                img{
+                img {
                     width: 1.5rem;
                     height: 2rem;
                     float: left;
                     margin-right: 1rem;
                 }
             }
-            &--btn{
+            &--btn {
                 position: absolute;
                 right: 20rem;
                 bottom: 2rem;
@@ -74,10 +73,10 @@
                 background: transparent;
             }
         }
-        &__info{
+        &__info {
             width: 74rem;
             margin-top: 2.5rem;
-            span{
+            span {
                 font-weight: 400;
                 font-size: 1.6rem;
                 line-height: 2.2rem;
@@ -94,14 +93,14 @@
                 }   
             }
         }
-        &__btn{
+        &__btn {
             position: absolute;
             right: 3.3rem;
             bottom: 2.7rem;
             width: 20.7rem;
             height: 5.5rem;
             background: $main;
-            box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0.4rem 0.4rem $color-rgba-career;
             border: none;
             border-radius: 2rem;
             font-weight: 700;
@@ -112,7 +111,7 @@
             color: $white;
         }
     }
-    &-outside:last-child{ 
+    &-outside:last-child { 
         margin-bottom: 10rem;
     }
 }

@@ -42,7 +42,7 @@
             position: absolute;
             inset: 0;
             display: none;
-            background: rgba(0, 0, 0, 0.5);
+            background: $color-rgba-header;
             z-index: 13;
         }
         .mobile-menu-overlay.show {

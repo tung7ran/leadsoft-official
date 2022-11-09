@@ -1,12 +1,12 @@
-@include responsive_mobile{
-    .wrap-footer{
-        min-height:116vh;
+@include responsive_mobile {
+    .wrap-footer {
+        min-height:80vh;
     }
-    .footer{
+    .footer {
         &-logo {
             text-align: -webkit-center;
-            &-describe{
-                p{
+            &-describe {
+                p {
                     text-align: center;
                     margin-top: 1.2rem;
                     padding-right: 0rem;
@@ -14,27 +14,27 @@
             }
         }
         &-address,
-        &-social{
+        &-social {
             text-align: center;
         }
-        &-social{
-            &-icon__list{
+        &-social {
+            &-icon__list {
                 display: flex;
                 justify-content: center;
             }
         }
-        &-copyright{
+        &-copyright {
             display: flex;
             text-align: center;
             flex-direction: column-reverse;
-            p{  
+            p {  
                 margin-top: 1.2rem;
             }
         }
     }
 }
-@include responsive-tablet{
-    .wrap-footer{
+@include responsive-tablet {
+    .wrap-footer {
         min-height: 115vh;
     }
 }
