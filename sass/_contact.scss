@@ -61,6 +61,11 @@
             line-height: 2.1rem;
             padding-left: 3.4rem;
         }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
         &__describe{
             margin-top: 3.7rem;
             &--textarea{
@@ -118,6 +123,7 @@
         text-align: center;
         color: $color-contact-industries;
         margin: 2rem 0 2.2rem;
+        min-height: 4.2rem;
     }
     &-sub{
         font-size: 1.6rem;
