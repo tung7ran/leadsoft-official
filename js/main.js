@@ -141,7 +141,7 @@ $(document).ready(function(){
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
-              dots:true
+              dots:true,
             }
           }
         ]
@@ -223,6 +223,15 @@ $(document).ready(function(){
       nextArrow: true,
       prevArrow: true,
       responsive: [
+        {
+          breakpoint: 740,
+          settings: {
+            slidesToShow: 1,
+            autoplaySpeed: 3000,
+            autoplay: true,
+            dots:true
+          }
+        },
         {
           breakpoint: 481,
           settings: {
