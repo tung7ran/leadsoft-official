@@ -1,12 +1,12 @@
+@import 'variables';
 html,
 body {
   overflow-x: hidden;
   font-size: 1.6rem;
   line-height: 1em;
-  color: #000;
+  color: $black;
   box-sizing: border-box;
 }
-
 html,
 body,
 div,
@@ -98,14 +98,12 @@ video {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
   font-family: Roboto-Regular;
   line-height: 2em;
   box-sizing: border-box;
 }
-
 article,
 aside,
 details,
@@ -119,12 +117,10 @@ nav,
 section {
   display: block;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 *,
 *::after,
 *::before {
@@ -134,7 +130,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: $black;
   display: inline-block;
 }
 img {
@@ -143,12 +139,16 @@ img {
   height: auto;
 }
 .header-active {
-  color: #FF9330;
+  color: $main;
   font-weight: bold;
 }
 .base-btn {
-  color: #fff;
-  background-color: #FF9330;
+  color: $white;
+  background-color: $main;
   border-radius: 1.5rem;
   border: none;
+}
+.slick-next,
+.slick-prev {
+  display: none !important;
 }

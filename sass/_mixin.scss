@@ -2,31 +2,26 @@ $res_mobile : "(min-width: 360px) and (max-width:739px)";
 $res_tablet : "(min-width: 740px) and (max-width: 1023px)";
 $res_tablet-mobile : "(max-width: 1023px)";
 $res_pc: "(min-width:1024px)";
-
 @mixin responsive_mobile() {
   @media #{$res_mobile} {
     @content;
   }
 }
-
 @mixin responsive_tablet() {
   @media #{$res_tablet} {
     @content;
   }
 }
-
 @mixin responsive_tablet-mobile() {
   @media #{$res_tablet-mobile} {
     @content;
   }
 }
-
 @mixin responsive_pc() {
   @media #{$res_pc} {
     @content;
   }
 }
-
 @font-face {
   font-family: Roboto-Bold;
   src: url("../font/Roboto-Bold.ttf");

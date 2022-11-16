@@ -1,21 +1,108 @@
 @import 'variables';
-
-@include responsive_tablet-mobile { 
-
-}
 @include responsive_tablet {
-
+    .base-banner {
+        position: relative;
+        .banner-service {
+            &-heading,
+            &-text {
+                margin-left: 5.5%;
+                top: 45%;
+            }
+            &-heading {
+                font-size: 3.2rem;
+                line-height: 3rem;
+            }
+            &-text {
+                font-size: 2rem;
+                line-height: 2.1rem;
+                margin-top: 4.2rem;
+            }
+        }
+    }
+    .service-navigation {
+        height: 6rem;
+        &-list {
+            line-height: 6rem;
+            &__item {
+                &--link {
+                    font-size: 1.4rem;
+                    line-height: 2.1rem;
+                }
+                span {
+                    height: 27%;
+                    margin-left: 2rem;
+                }
+            }
+            &__item:last-child { 
+                span {
+                    display: none;
+                }
+            }
+        }
+        li + li {
+            margin-left: 4rem;
+        }
+    }
+    .content-service {
+        &-item {
+            padding: 14.8rem 0 19.9rem;
+            &__image {
+                height: 26rem;
+                width: 50%;
+            }
+            &__info {
+                width: 50%;
+                &--heading {
+                    font-size: 1.7rem;
+                }
+                &--text {
+                    font-size: 1.6rem;
+                }
+                &--list {
+                    &-item{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        .content-service-item:nth-of-type(2n+1) {
+            .content-service-item__info {
+                padding-left: 0.7rem;
+            }
+        }
+        .content-service-item:nth-of-type(2n+2) {
+            .content-service-item__info {
+                padding-right: 0.7rem;
+            }
+        }
+    }
 }
 @include responsive_mobile {
+    .base-banner {
+        position: relative;
+        .banner-service {
+            &-heading,
+            &-text {
+                margin-left: 5.5%;
+                top: 45%;
+            }
+            &-heading {
+                font-size: 2.6rem;
+                line-height: 3rem;
+            }
+            &-text {
+                font-size: 1.8rem;
+                line-height: 2.1rem;
+                margin-top: 4.2rem;
+            }
+        }
+    }
     .service-navigation {
         display: none;
     }
     .content-service {
         &-item {
-            width: 480px !important;
-            padding-left: 0.8rem;
-            padding-right: 0.8rem;
-            padding-bottom: 0;
+            padding: 14.8rem 0.8rem 0;
             &__info {
                 &--heading {
                     margin-top: 2.2rem;
@@ -28,22 +115,21 @@
             }
         }
         .content-service-item:nth-of-type(2n+2) {
-            background: #fff;
+            background: $white;
             .content-service-item__info {
                 padding-right: 0;
             }
+            .content-service-item__box {
+                flex-direction: column;
+            }
         }
         .content-service-item:nth-of-type(2n+1) {
-            background: #fff;
             .content-service-item__info {
                 padding-left: 0.7rem;
             }
-            .row {
+            .content-service-item__box {
                 flex-direction: column-reverse;
             }
         }
     }
-}
-@include responsive_pc {
-
 }

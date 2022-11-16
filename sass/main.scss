@@ -15,46 +15,53 @@
 @import 'responsiveHeader';
 @import 'responsiveHome';
 @import 'responsiveService';
-.base-partner{
-    &-heading{
+.base-partner {
+    &-heading {
         text-align: center;
         margin-bottom: 3.4rem;
-        &__text{
+        &__text {
             color: $main;
             font-weight: 700;
-            font-family: Roboto-regular;
             font-size: 4.2rem;
             line-height: 5rem;
         }
     }
-    &-list{
+    &-list {
         position: relative;
+        &__item {
+            text-align: center;
+        }
     }
 }
-
-.trademark-left{
-    cursor: pointer;
+.base-map {
+    iframe {
+        width: 100%;
+        height: 40rem;
+    }
+}
+.trademark-left {
     position: absolute;
+    left: -2%;
+    top: 2.5rem;
     color: $main;
     font-size: 8rem;
-    left: -6%;
-    top: 35px;
-}
-.trademark-right{
     cursor: pointer;
+}
+.trademark-right {
     position: absolute;
+    top: 2.5rem;
+    right: -2%;
     color: $main;
     font-size: 8rem;
-    right: -6%;
-    top: 35px;
+    cursor: pointer;
 }
-.product-pagination{
+.product-pagination {
     margin-top: 6.8rem;
-    &-list{
+    &-list {
         display: flex;
         align-items: center;
         justify-content: center;
-        &__item{
+        &__item {
             color: $color-number;
             border: none;
             background: $white;
@@ -62,7 +69,7 @@
             font-size: 1.8rem;
         }
         &__left,
-        &__right{
+        &__right {
             color: $color-number;
             border: none;
             background: $white;
@@ -70,7 +77,7 @@
             font-size: 1.8rem;
         }
         &__item.active { 
-            border: 1px solid #FF9935;
+            border: 0.1rem solid $background-color-message;
             border-radius: 50%;
         }
     }
@@ -102,16 +109,13 @@
     }
 }
 .modal-recruit {
-    .pd-0 {
-        padding: 0;
-    }
     position: fixed;
     display: none;
     align-items: center;
     justify-content: center;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 10;
+    background-color: $color-rgba-main;
+    z-index: 12;
     &-container {
         border-radius: 2rem;
         background: $white;
@@ -119,6 +123,7 @@
         position: relative;
         animation: modalFaceIn ease 0.6s;
         min-height: 20rem;
+        width: 60.7rem;
         &__close {
             position: absolute;
             top: 0;
@@ -127,7 +132,8 @@
             padding: 1.5rem;
         }
         &__contact {
-            color: #949494;
+            color: $color-modat-contact;
+            padding: 0 6rem 5.8rem;
             &--name,
             &--number,
             &--email,
@@ -135,26 +141,36 @@
                 display: flex;
                 justify-content: space-between;
             }
+            &--name {
+                padding-top: 10.1rem;
+            }
             .form-label { 
                 font-size: 1.8rem;
             }
             .form-control {
                 outline: none;
-                border: 1px solid #424242;
+                border: 0.1rem solid $border-contact-textarea;
                 border-radius: 1rem;
                 width: 50%;
-                color: #949494;
+                color: $color-modat-contact;
                 font-size: 1.8rem;
+                padding-left: 1.2rem;
+                margin-bottom: 2.8rem;
             }
             &--content {
                 outline: none;
                 font-size: 1.8rem;
                 textarea {
                     width: 100%;
-                    border: 1px solid #424242;
+                    border: 0.1rem solid $border-contact-textarea;
                     border-radius: 1rem;
-                    color: #949494;
+                    color: $color-modat-contact;
+                    height: 13.1rem;
+                    padding: 1rem 0 0 1rem;
                 }
+            }
+            .form-image {
+                margin-top: 2.2rem;
             }
             &--btn {
                 background: $main;
@@ -174,6 +190,47 @@
         display: flex;
     }
 }
+.modal-map {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    background-color: $color-rgba-main;
+    z-index: 13;
+    &-address {
+        min-height: 60.38rem;
+        width: 60.38rem;
+        position: relative;
+        animation: modalFaceIn ease 0.6s;
+        border-radius: 1rem;
+        &__close {
+            .close-icon {
+                position: absolute;
+                color: $black;
+                right: 0;
+                top: 0;
+                padding: 1.5rem;
+                cursor: pointer;
+                opacity: 0.8;
+                font-size: 1.8rem;
+            }
+            .close-icon:hover {
+                opacity: 1;
+            }
+        }
+        &__search {
+            iframe {
+                border-radius: 1rem;
+                width: 100%;
+                height: 60.38rem;
+            }
+        }
+    }
+    &.visible {
+        display: flex;
+    }
+}
 @keyframes modalFaceIn {
     from {
         opacity: 0;
@@ -181,7 +238,7 @@
     }
     to {
         opacity: 1;
-        transform: 0;
+        transform: translateY(0);
     }
 }
 #myBtn {
@@ -191,14 +248,14 @@
     right: 3rem;
     width: 5.2rem;
     height: 4.9rem;
-    border: 1px solid #fff;
+    border: 0.1rem solid $white;
     outline: none;
     cursor: pointer;
     border-radius: 0.5rem;
     background: transparent;
     z-index: 12;
-    box-shadow: 15px 15px 38px 0 rgb(0 0 0 / 20%);
-    -webkit-box-shadow: 15px 15px 38px 0 rgb(0 0 0 / 20%);
+    box-shadow: 1.5rem 1.5rem 3.8rem 0 $color-rgb-contact;
+    -webkit-box-shadow: 1.5rem 1.5rem 3.8rem 0 $color-rgb-contact;
 }
 .message-btn {
     position: fixed;
@@ -210,58 +267,38 @@
     outline: none;
     cursor: pointer;
     border-radius: 50%;
-    background: #FF9935;
     z-index: 12;
-    box-shadow: 15px 15px 38px 0 rgb(0 0 0 / 20%);
-    -webkit-box-shadow: 15px 15px 38px 0 rgb(0 0 0 / 20%);
+    box-shadow: 1.5rem 1.5rem 3.8rem 0 $color-rgb-contact;
+    -webkit-box-shadow: 1.5rem 1.5rem 3.8rem 0 $color-rgb-contact;
 }
 @include responsive_pc {
-    .base-partner{
+    .base-partner {
         margin-top: 11.4rem;
-        &-list{
-            &__item{
-                .margin-image-golfzon{
-                    margin-top: 3rem;
+        &-list {
+            &__item {
+                &--link {
+                    width: 70%;
                 }
-                .margin-image-unicidex{
-                    margin-top: 6.8em;
+                .margin-image-golfzon {
+                    margin-top: 2.6rem;
+                }
+                .margin-image-unicidex {
+                    margin-top: 6.3rem;
+                }
+                .margin-image-aia {
+                    margin-top: 2.2rem;
                 }
             }
         }
     }
     .base-banner {
         height: 51.3rem;
+        position: relative;
     }
     .modal-recruit {
-        .pd-0 {
-            padding: 0;
-        }
         .form-contact {
             padding: 0;
             margin-left: 0.1rem;
-        }
-        &-container {
-            width: 60.7rem;
-            &__contact {
-                padding: 0 6rem 5.8rem;
-                &--name {
-                    padding-top: 10.1rem;
-                }
-                .form-control {
-                    padding-left: 1.2rem;
-                    margin-bottom: 2.8rem;
-                }
-                &--content {
-                    textarea {
-                        height: 13.1rem;
-                        padding-left: 1rem;
-                        padding-top: 1rem;
-                    }
-                }
-                .form-image {
-                    margin-top: 2.2rem;
-                }
-            }
         }
     }
 }
@@ -272,43 +309,54 @@
         &-career { 
             padding-top: 50%;
         }
+        &-product {
+            background-position: unset;
+        }
     }
 }
-@include responsive-tablet{
-    .base-partner{
-        margin-top: 6.4rem !important;
-        margin-bottom: 16rem;
-        &-list__item{
+@include responsive-tablet {
+    .base-partner {
+        margin: 10rem auto;
+        width: 80%;
+        &-list {
+            line-height: 17rem;
+            &__item {
             text-align: center;
+                &--link {
+                    width: 18rem;
+                }
+            }
         }
     }
     .trademark-left {
-        left: -3% !important;
+        left: -6% !important;
+        font-size: 6rem;
     }
     .trademark-right {
-        right: -3% !important;
+        right: -6% !important;
+        font-size: 6rem;
     }
 }
-@include responsive_mobile{
-    .modal-recruit-container{
+@include responsive_mobile {
+    .modal-recruit-container {
         width: 95%;
-        &__contact{
+        &__contact {
             padding: 0 3rem;
-            &--name{
+            &--name {
                 padding-top: 5rem;
                 display: block;
             }
             &--email , 
             &--number ,
-            &--phone{
+            &--phone {
                 display: block;
             }
-            .form-control{
+            .form-control {
                 width: 100%;
                 padding: 1.8rem 0rem 1.8rem 2.2rem;
                 margin-bottom: 1.4rem;
             }
-            .form-label{
+            .form-label {
                 margin-bottom: 1.4rem;
             }
             .form-image {
@@ -316,13 +364,12 @@
                 margin-top: 2rem;
             }
             &--content {
-                textarea{
+                textarea {
                     margin-top: 1.4rem;
-                    padding-left: 2.2rem;
-                    padding-top: 1.6rem;
+                    padding: 1.6rem 0 0 2.2rem;
                 }
             }
-            &--btn{
+            &--btn {
                 margin-bottom: 3.4rem;
                 font-size: 2.1rem;
             }
@@ -331,53 +378,73 @@
             }
         }
     }
-
-    .base-partner{
-        margin-top: 3.8rem !important;
-        margin-bottom: 15rem;
-        &-heading__text{
-            font-size: 2.8rem !important;
+    .base-partner {
+        margin: 3.8rem 0 15rem;
+        &-heading__text {
+            font-size: 2.8rem;
+        }
+        &-list__item {
+            text-align: center;
+            &--link {
+                width: 14rem;
+            }
+        }
+        &-list {
+            line-height: 9rem;
+            &__item {
+                text-align: center;
+                &--link {
+                    width: 14rem;
+                }
+            }
         }
     }
-    .trademark-right{
+    .trademark-right {
         display: none !important; 
     }
-    .trademark-left{
+    .trademark-left {
         display: none !important; 
     }
-    .base-partner-list__item {
-        text-align: center;
-        // line-height: 8.3rem;
-    }
-    .base-partner-list__item--link{
-        width: 14rem;
-    }
-    .base-partner-list__item .margin-image-unicidex {
-        // margin-top: 5.2rem !important;
-    }
-    .slick-dots{
-        display: flex  !important;
+    .slick-dots {
+        display: flex !important;
         justify-content: center;
         margin-top: 1.8rem;
-    }
-    .slick-dots{
-        li{
+        li {
             margin: 0 0.5rem;
         }
-    }
-    .slick-dots{
-        button{
+        button {
             display: block;
             width: 1rem;
             height: 1rem;
-            padding: 0;
             border: none;
             border-radius: 100%;
             background-color: $slick-dots;
-            text-indent: -9999px;
+            overflow: hidden;
+            padding-top: 1rem;
+        }
+        li.slick-active button {
+            background-color: $slick-dots-active;
         }
     }
-    .slick-dots li.slick-active button {
-        background-color: $slick-dots-active;
+    .message-btn {
+        width: 3.5rem;
+        height: 3.6rem;
+    }
+    #myBtn {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .modal-map { 
+        &-address {
+            &__close {
+                .close-icon {
+                    right: 2.5rem;
+                }
+            }
+            &__search {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
     }
 }

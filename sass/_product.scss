@@ -1,57 +1,80 @@
 @import 'variables';
-
+.base-banner {
+    .banner-product {
+        &-text,
+        &-heading,
+        &-info {
+            position: absolute;
+            color: $white;
+            font-family: Roboto-Regular;
+            margin-left: 10.5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &-text {
+            font-size: 2.8rem;
+            line-height: 2.8rem;
+            margin-top: -6.2rem;
+        }
+        &-heading {
+            font-size: 4.2rem;
+            line-height: 4.9rem;
+            text-transform: uppercase;
+        }
+        &-info {
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            margin-top: 6.2rem;
+        }
+    }
+}
 .content-product {
-    .product-outside{
-        margin-top: 11rem;
-        margin-bottom: 10.4rem;
-        &-title{
+    .product-outside {
+        margin: 11rem 0 10.4rem;
+        font-family: Roboto-Bold;
+        text-align: center;
+        &-title {
             color: $main;
             line-height: 5.2rem;
             font-size: 3.6rem;
-            text-align: center;
-            font-family: Roboto-Bold;
         }
-        &-sub{
+        &-sub {
             margin-top: 6.1rem;
             font-size: 1.8rem;
-            text-align: center;
             line-height: 2.6rem;
-            font-family: Roboto-Bold;
         }
     }
-    .product-top{
-        &-list{
-            &__item{
-                height: 35rem;
+    .product-top {
+        &-list {
+            &__item {
                 position: relative;
                 left: 1rem;
-                &--image{
+                height: 35rem;
+                color: $white;
+                &--image {
                     position: absolute;
                     width: 58rem;
                     height: 100%;
-                    img{
+                    img {
                         border-radius: 2rem;
                     }
                 }
-                &--title{
+                &--title {
                     font-size: 1.8rem;
                     position: relative;
-                    margin-top: 4rem;
-                    margin-left: 4rem;
-                    color: $white;
+                    margin: 4rem 0 0 4rem;
                 }
-                &--sub{
+                &--sub {
                     font-size: 1.6rem;
                     position: relative;
                     margin: 1.5rem 39% 2rem 4rem;
                     height: 8rem;
-                    color: $white;
                 }
-                &--button{
+                &--button {
                     position: relative;
                     font-size: 1.6rem;
                     color: $white;
-                    background-color: #F0A21A;
+                    background-color: $background-color-btn;
                     padding: 0.8rem 3rem;
                     border-radius: 0.5rem;
                     margin-left: 4rem;
@@ -60,40 +83,38 @@
             }
         }
     }
-    .product-bottom{
+    .product-bottom {
         margin-top: 10.4rem;
-        &-list{
-            &__item{
+        &-list {
+            &__item {
                 height: 35rem;
                 position: relative;
                 left: 1rem;
-                &--image{
+                color: $white;
+                &--image {
                     position: absolute;
                     width: 58rem;
                     height: 100%;
-                    img{
+                    img {
                         border-radius: 2rem;
                     }
                 }
-                &--title{
+                &--title {
                     font-size: 1.8rem;
                     position: relative;
-                    margin-top: 4rem;
-                    margin-left: 4rem;
-                    color: $white;
+                    margin: 4rem 0 0 4rem;
                 }
-                &--sub{
+                &--sub {
                     font-size: 1.6rem;
                     position: relative;
                     margin: 1.5rem 39% 2rem 4rem;
                     height: 8rem;
-                    color: $white;
                 }
-                &--button{
+                &--button {
                     position: relative;
                     font-size: 1.6rem;
                     color: $white;
-                    background-color: #F0A21A;
+                    background-color: $background-color-btn;
                     padding: 0.8rem 3rem;
                     border-radius: 0.5rem;
                     margin-left: 4rem;
@@ -103,4 +124,3 @@
         }
     }
 }
-  

@@ -37,7 +37,7 @@
 .content-home {
     .home-info {
         position: relative;
-        background-image: url('../images/actualites-bg.jpg');
+        background-image: url('../images/background-main.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         &-body {
@@ -47,7 +47,6 @@
                 text-transform: uppercase;
             }
             &__text {
-                
                 text-align: justify;
             }
             &__list {
@@ -55,16 +54,14 @@
                 flex-wrap: wrap;
                 &-item {
                     &--right {
+                        font-size: 1.8rem;
+                        line-height: 2.1rem;
                         &-heading {
-                            font-size: 1.8rem;
-                            line-height: 2.1rem;
                             font-weight: 700;
                             color: $main;
                         }
                         &-text {
                             color: $color-text;
-                            font-size: 1.8rem;
-                            line-height: 2.1rem;
                         }
                     }
                 }
@@ -90,24 +87,22 @@
                     justify-content: center;
                 }
                 &-item {
-                    background: #FF7E07;
-                    border: 3px solid $white;
-                    border-radius: 15px;
+                    background: $background-color-industries;
+                    border: 0.3rem solid $white;
+                    border-radius: 1.5rem;
                     text-align: center;
                     cursor: pointer;
+                    line-height: 2.1rem;
+                    color: $white;
                     &--image {
                         transition: 1s ease-in-out;
                     }
                     &--heading {
                         font-size: 1.8rem;
-                        line-height: 2.1rem;
-                        color: $white;
                         transition: 1s ease-in-out;
                     }
                     &--text {
                         font-size: 1.6rem;
-                        line-height: 2.1rem;
-                        color: $white;
                         opacity: 0;
                         visibility: hidden;
                         transition: 0.5s;
@@ -115,13 +110,13 @@
                 }
                 &-item:hover { 
                     .home-industries-body__list-item--image {
-                        transform: translateY(-30px);
+                        transform: translateY(-3rem);
                     }
                     .home-industries-body__list-item--heading {
-                        transform: translateY(-51px);
+                        transform: translateY(-1.1rem);
                     }
                     p {
-                        margin-top: -5rem;
+                        margin-top: 1rem;
                         transition-delay: 0.2s;
                         opacity: 1;
                         visibility: visible;
@@ -130,7 +125,7 @@
             }
         }
         &-image {
-            background-image: url('../images/bg5.png');
+            background-image: url('../images/background-home-2.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -139,25 +134,23 @@
     .home-brand {
         position: relative;
         &-image {
-            background-image: url('../images/global-02.png');
+            background-image: url('../images/background-home-3.png');
             background-repeat: no-repeat;
             background-position: right;
         }
         &-body {
             text-align: right;
+            line-height: 4.5rem;
             &__title {
                 font-size: 3.8rem;
-                line-height: 4.5rem;
-                color: #141414;
+                color: $color-heading-brand;
             }
             &__text {
                 font-size: 3.1rem;
-                line-height: 4.5rem;
                 color: $main;
             }
             &__list {
                 display: flex;
-                justify-content: flex-end;
                 justify-content: space-between;
                 &-item {
                     display: flex;
@@ -167,8 +160,7 @@
                         color: $main;
                     }
                     &--heading {
-                        color: #394244;
-                        
+                        color: $color-title-brand;
                         span {
                             color: $main;
                         }
@@ -180,20 +172,17 @@
     .home-contact {
         position: relative;
         &-image {
-            background-image: url('../images/bannercontact.jpg');
+            background-image: url('../images/banner-contact-home.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-            &__mobile {
-                // display: none;
-            }
         }
         .home-contact-btn {
             position: absolute;
             font-weight: 700;
             background-color: $white;
-            font-size: 2.4rem;
+            font-size: 2rem;
             a {
                 display: flex;
                 align-items: center;
@@ -204,7 +193,7 @@
     .home-reason {
         text-align: center;
         &-title {
-            color: #030303;
+            color: $color-heading-reason;
             font-size: 2.4rem;
             line-height: 2.8rem;
             span {
@@ -215,7 +204,7 @@
             }
         }
         &-text {
-            color: #6d6d6d;
+            color: $color-text;
             font-size: 2rem;
             span {
                 display: block;
@@ -229,17 +218,11 @@
                     line-height: 3.5rem;
                 }
                 &--text {
-                    color: #6d6d6d;
+                    color: $color-text;
                     font-size: 2.4rem;
                     line-height: 2.8rem;
                 }
             }
-        }
-    }
-    .home-map{
-        iframe{
-            width: 100%;
-            height: 40rem;
         }
     }
 }

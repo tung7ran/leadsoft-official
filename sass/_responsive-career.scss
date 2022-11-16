@@ -1,52 +1,46 @@
 @include responsive_mobile {
-    .content-recruit{
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+    .content-recruit {
+        padding: 0 1.5rem;
         &-image {
             right: -73rem;
+            &__top {
+                width: 54.7rem;
+                height: 57.6rem;
+                right: -20rem;
+            }
+            &__bottom {
+                width: 54.7rem;
+                height: 57.6rem;
+                left: -15rem;
+                transform: rotate(26deg);
+                bottom: 20rem;
+            }
         }
-        &-title{
+        &-title {
             width: 86%;
             margin: 7.6rem auto 9.1rem;
             text-align: center;
         }
-        &-outside{
-            width: 45rem;
+        &-outside {
+            width: 100%;
             height: 81.5rem;
             padding: 3.2rem 2.3rem;
-            &__top{
+            &__top {
                 padding: 0 0 4.1rem 0;
-                span{
-                    width: 90%;
-                    img{
+                span {
+                    width: 100%;
+                    img {
                         width: 0.9rem;
                         height: 1.5rem;
-                        margin-right: 1rem;
-                        margin-top: 0.5rem;
+                        margin: 0.5rem 1rem 0 0;
                     }
                 }
-                &__info{
-                    width: 100%;
-                    &--list {
-                        &-item {
-                            margin-bottom: 0.5rem;
-                        }
-                    }
-                }
-                &__btn{
-                    width: 16.5rem;
-                    height: 4.8rem;
-                    font-size: 1.8rem;
-                    line-height: 2.5em;
-                    left: 0; 
-                    right: 0; 
-                    margin: 2.2 auto;
-                &--btn{
+                &--btn {
                     right: 0;
-                    bottom: 1rem;
+                    bottom: 1.6rem;
                 }
             }
-            &__info{
+            &__info {
                 width: 100%;
                 &--list {
                     &-item {
@@ -54,97 +48,53 @@
                     }
                 }
             }
-            &__btn{
+            &__btn {
                 width: 16.5rem;
                 height: 4.8rem;
                 font-size: 1.8rem;
                 line-height: 2.5em;
                 left: 0; 
                 right: 0; 
-                margin-left: auto; 
-                margin-right: auto; 
-                margin-top: 2.2rem;
-                margin-bottom: 2.2rem;
+                margin: 2.2rem auto;
             }
         }
-        &-outside:last-child{ 
-            margin-bottom: 6rem;
-            width: 100%;
-            height: 100%;
-            padding-bottom: 12rem;
-        }
-    }
-}
-}
-@include responsive-tablet{
-    .content-recruit{
-        &-image {
-            right: -22rem;
-        }
-        &-title{
-            width: 100%;
-            margin: 4.6rem auto 5.1rem;
-        }
-        &-outside{
-            width: 100%;
-            height: 58rem;
-            padding: 4rem;
-            &__top{
-                span{
-                    width: 100%;
-                    img{
-                        width: 0.9rem;
-                        height: 1.5rem;
-                        margin-right: 1rem;
-                        margin-top: 0.5rem;
-                    }
-                }
-                &--btn{
-                    right: 0;
-                }
-            }
-            &__info{
-                width: 100%;
-                &--list {
-                    &-item {
-                        margin-bottom: 0.5rem;
-                    }
-                }
-            }
-            &__btn{
-                padding-bottom: 0.5rem;
-            }
-        }
-        &-outside:last-child{ 
-            margin-bottom: 6rem;
-            width: 100%;
+        &-outside:last-child { 
+            margin-bottom: 2rem;
+            width: 97%;
             height: 100%;
             padding-bottom: 12rem;
         }
     }
 }
 
-@include responsive-pc{
-    .content-recruit{
-        &-outside{
+@include responsive-tablet {
+    .content-recruit {
+        &-image {
+            right: -22rem;
+        }
+        &-title {
+            width: 100%;
+            margin: 4.6rem auto 5.1rem;
+        }
+        &-outside {
             width: 100%;
             height: 58rem;
             padding: 4rem;
-            &__top{
-                span{
+            &__top {
+                span {
                     width: 100%;
-                    img{
+                    img {
                         width: 0.9rem;
                         height: 1.5rem;
                         margin-right: 1rem;
                         margin-top: 0.5rem;
                     }
                 }
-                &--btn{
+                &--btn {
                     right: 0;
                 }
             }
-            &__info{
+            &__info {
                 width: 100%;
                 &--list {
                     &-item {
@@ -152,11 +102,51 @@
                     }
                 }
             }
-            &__btn{
+            &__btn {
                 padding-bottom: 0.5rem;
             }
         }
-        &-outside:last-child{ 
+        &-outside:last-child { 
+            margin-bottom: 6rem;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 12rem;
+        }
+    }
+}
+@include responsive-pc {
+    .content-recruit {
+        &-outside {
+            width: 100%;
+            height: 58rem;
+            padding: 4rem;
+            &__top {
+                span {
+                    width: 100%;
+                    img {
+                        width: 0.9rem;
+                        height: 1.5rem;
+                        margin-right: 1rem;
+                        margin-top: 0.5rem;
+                    }
+                }
+                &--btn {
+                    right: 0;
+                }
+            }
+            &__info {
+                width: 100%;
+                &--list {
+                    &-item {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+            &__btn {
+                padding-bottom: 0.5rem;
+            }
+        }
+        &-outside:last-child { 
             margin-bottom: 6rem;
             width: 100%;
             height: 100%;
